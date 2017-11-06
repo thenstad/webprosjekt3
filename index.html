@@ -12,7 +12,7 @@
 		  'url': 'http://localhost:8983/solr/wp3core/select/',
 		  'data': {'wt':'jsonp', 'q':'*','hl':true,'rows':5, 'fl':'attr_date, attr_filecontent'},
 		  'success': function(data) { console.log(data)},
-		  'error': function(data) {console.log('request failed')},
+		  'error': function(data) {console.log('request failed. start solr first')},
 		  'dataType': 'jsonp',
 		  'jsonp': 'json.wrf',
 		  'type': 'post'

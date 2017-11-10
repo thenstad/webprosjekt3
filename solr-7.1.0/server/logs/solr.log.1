@@ -1,70 +1,67 @@
-2017-11-06 17:15:35.062 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2017-11-06 17:15:35.826 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
-2017-11-06 17:15:35.826 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-11-06 17:15:35.826 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0, Default config dir: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
-2017-11-06 17:15:35.967 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-06T17:15:35.951Z
-2017-11-06 17:15:35.967 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-11-06 17:15:35.982 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr
-2017-11-06 17:15:35.982 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\solr.xml
-2017-11-06 17:15:36.529 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr
-2017-11-06 17:15:36.529 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [wp3, wp3core]
-2017-11-06 17:15:36.529 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2017-11-06 17:15:36.592 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrResourceLoader [wp3] Added 53 libs to classloader, from paths: [/C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/clustering/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/extraction/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/langid/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/velocity/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/dist]
-2017-11-06 17:15:36.592 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.c.SolrResourceLoader [wp3core] Added 53 libs to classloader, from paths: [/C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/clustering/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/extraction/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/langid/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/velocity/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/dist]
-2017-11-06 17:15:36.732 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.1.0
-2017-11-06 17:15:36.764 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.1.0
-2017-11-06 17:15:36.951 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.s.IndexSchema [wp3core] Schema name=default-config
-2017-11-06 17:15:36.982 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.IndexSchema [wp3] Schema name=default-config
-2017-11-06 17:15:37.498 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2017-11-06 17:15:37.498 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2017-11-06 17:15:37.498 INFO  (main) [   ] o.e.j.s.Server Started @3122ms
-2017-11-06 17:15:37.545 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.CoreContainer Creating SolrCore 'wp3' using configuration from instancedir C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3, trusted=true
-2017-11-06 17:15:37.545 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.c.CoreContainer Creating SolrCore 'wp3core' using configuration from instancedir C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core, trusted=true
-2017-11-06 17:15:37.561 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-11-06 17:15:37.561 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-11-06 17:15:37.576 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.c.SolrCore [[wp3core] ] Opening new SolrCore at [C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core], dataDir=[C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core\data\]
-2017-11-06 17:15:37.576 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrCore [[wp3] ] Opening new SolrCore at [C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3], dataDir=[C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3\data\]
-2017-11-06 17:15:37.608 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-11-06 17:15:37.608 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-11-06 17:15:37.871 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-11-06 17:15:37.871 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-11-06 17:15:37.871 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-11-06 17:15:37.871 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-11-06 17:15:37.887 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-11-06 17:15:37.887 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-11-06 17:15:37.887 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-11-06 17:15:37.887 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-11-06 17:15:37.949 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.SolrIndexSearcher Opening [Searcher@3d5dee38[wp3] main]
-2017-11-06 17:15:37.965 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3\conf
-2017-11-06 17:15:37.981 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-11-06 17:15:37.981 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-11-06 17:15:37.996 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.s.SolrIndexSearcher Opening [Searcher@7f0cbe2b[wp3core] main]
-2017-11-06 17:15:37.996 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2017-11-06 17:15:37.996 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core\conf
-2017-11-06 17:15:37.996 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-11-06 17:15:37.996 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-11-06 17:15:37.996 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2017-11-06 17:15:38.043 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3d5dee38[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2017-11-06 17:15:38.043 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-06 17:15:38.043 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-11-06 17:15:38.043 INFO  (searcherExecutor-8-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7f0cbe2b[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
-2017-11-06 17:15:38.043 INFO  (searcherExecutor-8-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-06 17:15:38.043 INFO  (searcherExecutor-8-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-11-06 17:15:38.059 INFO  (searcherExecutor-8-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.SolrCore [wp3core] Registered new searcher Searcher@7f0cbe2b[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
-2017-11-06 17:15:38.059 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.SolrCore [wp3] Registered new searcher Searcher@3d5dee38[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2017-11-06 17:15:38.059 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1583337741283753984
-2017-11-06 17:15:42.384 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=28
-2017-11-06 17:15:45.000 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106452223579683338_1509988544936&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1509988544937} hits=3 status=0 QTime=54
-2017-11-06 17:23:45.278 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210723333818475175_1509989025250&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1509989025251} hits=3 status=0 QTime=2
-2017-11-06 17:23:46.642 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106140413095935437_1509989026623&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1509989026624} hits=3 status=0 QTime=1
-2017-11-06 17:23:47.194 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32104496777727120469_1509989027175&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1509989027176} hits=3 status=0 QTime=1
-2017-11-06 17:23:47.407 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32102520099589762892_1509989027383&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1509989027384} hits=3 status=0 QTime=1
-2017-11-06 17:24:11.051 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32103423431812684652_1509989051032&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1509989051033} hits=3 status=0 QTime=1
-2017-11-06 17:29:20.238 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=58940486
-2017-11-06 17:29:20.238 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2017-11-06 17:29:20.238 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2017-11-06 17:29:20.238 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2017-11-06 17:29:20.238 INFO  (coreCloseExecutor-17-thread-1) [   x:wp3] o.a.s.c.SolrCore [wp3]  CLOSING SolrCore org.apache.solr.core.SolrCore@6f096e91
-2017-11-06 17:29:20.238 INFO  (coreCloseExecutor-17-thread-2) [   x:wp3core] o.a.s.c.SolrCore [wp3core]  CLOSING SolrCore org.apache.solr.core.SolrCore@150b5326
-2017-11-06 17:29:20.238 INFO  (coreCloseExecutor-17-thread-1) [   x:wp3] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wp3, tag=1862889105
-2017-11-06 17:29:20.238 INFO  (coreCloseExecutor-17-thread-2) [   x:wp3core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wp3core, tag=353063718
+2017-11-09 21:09:26.288 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2017-11-09 21:09:28.804 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
+2017-11-09 21:09:28.805 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-11-09 21:09:28.805 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0, Default config dir: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
+2017-11-09 21:09:28.920 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-09T21:09:28.808Z
+2017-11-09 21:09:28.921 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-11-09 21:09:29.088 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr
+2017-11-09 21:09:29.133 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\solr.xml
+2017-11-09 21:09:32.605 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr
+2017-11-09 21:09:32.622 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [wp3core]
+2017-11-09 21:09:32.636 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-11-09 21:09:33.122 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrResourceLoader [wp3core] Added 53 libs to classloader, from paths: [/C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/clustering/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/extraction/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/langid/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/velocity/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/dist]
+2017-11-09 21:09:36.810 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.1.0
+2017-11-09 21:09:37.517 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema [wp3core] Schema name=default-config
+2017-11-09 21:09:38.344 INFO  (main) [   ] o.e.j.s.Server Started @17277ms
+2017-11-09 21:09:39.256 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=415
+2017-11-09 21:09:40.821 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2017-11-09 21:09:40.959 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.CoreContainer Creating SolrCore 'wp3core' using configuration from instancedir C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core, trusted=true
+2017-11-09 21:09:41.096 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-11-09 21:09:41.123 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore [[wp3core] ] Opening new SolrCore at [C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core], dataDir=[C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core\data\]
+2017-11-09 21:09:41.282 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-11-09 21:09:42.659 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-11-09 21:09:42.660 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-11-09 21:09:42.772 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-11-09 21:09:42.772 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-11-09 21:09:43.356 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.SolrIndexSearcher Opening [Searcher@a4138ed[wp3core] main]
+2017-11-09 21:09:43.442 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core\conf
+2017-11-09 21:09:43.517 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-11-09 21:09:43.541 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-11-09 21:09:43.564 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2017-11-09 21:09:43.776 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@a4138ed[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
+2017-11-09 21:09:43.776 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-11-09 21:09:43.776 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-11-09 21:09:43.786 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.SolrCore [wp3core] Registered new searcher Searcher@a4138ed[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
+2017-11-09 21:18:15.771 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=} hits=0 status=0 QTime=161
+2017-11-09 21:20:55.166 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=ddd} hits=0 status=0 QTime=269
+2017-11-09 21:34:03.199 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109320212498731042_1510263243032&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510263243033} hits=3 status=0 QTime=139
+2017-11-09 21:34:20.117 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32100674997458651927_1510263260094&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510263260095} hits=3 status=0 QTime=2
+2017-11-09 21:35:20.135 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510263319653} status=0 QTime=2
+2017-11-09 21:35:20.228 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510263319655} status=0 QTime=93
+2017-11-09 21:35:20.297 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510263319655} status=0 QTime=60
+2017-11-09 21:35:23.490 INFO  (qtp1911006827-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510263319653} status=0 QTime=0
+2017-11-09 21:35:23.505 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1510263323471} status=0 QTime=6
+2017-11-09 21:35:23.527 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/replication params={wt=json&command=details&_=1510263323472} status=0 QTime=15
+2017-11-09 21:35:23.536 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1510263319655&ts=1510263319655} status=503 QTime=4
+2017-11-09 21:35:23.626 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510263319655} status=0 QTime=134
+2017-11-09 21:35:23.627 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/system params={wt=json&_=1510263323471} status=0 QTime=114
+2017-11-09 21:35:26.364 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510263319653} status=0 QTime=0
+2017-11-09 21:35:26.434 INFO  (qtp1911006827-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510263319655} status=0 QTime=68
+2017-11-09 21:35:28.437 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&_=1510263326268} hits=3 status=0 QTime=1
+2017-11-09 21:37:48.830 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321018647991792779828_1510263468800&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510263468801} hits=3 status=0 QTime=2
+2017-11-09 21:37:51.293 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107583778100446799_1510263471272&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510263471273} hits=3 status=0 QTime=1
+2017-11-09 21:37:52.004 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32102147919116489807_1510263471979&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510263471980} hits=3 status=0 QTime=1
+2017-11-09 21:39:20.987 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108144761315813995_1510263560962&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510263560963} hits=3 status=0 QTime=2
+2017-11-09 21:40:29.418 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109785992560199805_1510263629373&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510263629374} hits=3 status=0 QTime=1
+2017-11-09 21:40:30.668 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32102427419801575894_1510263630616&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510263630617} hits=3 status=0 QTime=1
+2017-11-09 21:44:02.086 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109078191807435407_1510263842058&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510263842059} hits=3 status=0 QTime=2
+2017-11-09 21:44:35.821 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108656660795380315_1510263875796&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510263875797} hits=3 status=0 QTime=2
+2017-11-09 21:47:31.988 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109621147609147367_1510264051956&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510264051957} hits=3 status=0 QTime=2
+2017-11-09 21:52:41.539 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32103224602546879285_1510264361510&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510264361511} hits=3 status=0 QTime=2
+2017-11-09 21:52:58.664 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109793469262813905_1510264378649&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510264378650} hits=3 status=0 QTime=1
+2017-11-09 23:48:50.582 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=58940486
+2017-11-09 23:48:50.598 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2017-11-09 23:48:50.598 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2017-11-09 23:48:50.598 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2017-11-09 23:48:50.617 INFO  (coreCloseExecutor-12-thread-1) [   x:wp3core] o.a.s.c.SolrCore [wp3core]  CLOSING SolrCore org.apache.solr.core.SolrCore@22953fdf
+2017-11-09 23:48:50.617 INFO  (coreCloseExecutor-12-thread-1) [   x:wp3core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wp3core, tag=580206559

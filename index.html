@@ -10,13 +10,14 @@
 
 		$.ajax({
 		  'url': 'http://localhost:8983/solr/wp3core/select/',
-		  'data': {'wt':'jsonp', 'q':'*','hl':true,'rows':5, 'fl':'attr_date, attr_filecontent'},
-		  'success': function(data) { console.log(data)},
+		  'data': {'wt':'jsonp', 'q':'*','hl':false,'rows':3, 'fl':'attr_filecontent'},
+		  'success': function(data) { document.write(JSON.stringify(data))}, //earlier: console.log(data) instead of document.write(JSON.stringify(data))
 		  'error': function(data) {console.log('request failed. start solr first')},
 		  'dataType': 'jsonp',
 		  'jsonp': 'json.wrf',
 		  'type': 'post'
 		});
+
 
 	</script>
 	<form>
@@ -24,7 +25,6 @@
 	</form>
 
 	<p id="search_result">
-
 	</p>
 </body>
 </html>

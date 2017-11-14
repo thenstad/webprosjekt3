@@ -9,31 +9,29 @@
 	<script>
 
 	var searchBtn = document.getElementById("searchBtn");
+	var searchStr = document.getElementById("searchStr");
 /*	var searchString = document.getElementById("searchString").value; */
 
 		$.ajax({
 		  'url': 'http://localhost:8983/solr/wp3core/select/',
-		  'data': {'wt':'jsonp', 'q':'*','hl':true,'rows':3, 'fl':'attr_filecontent'},
+		  'data': {'wt':'jsonp', 'q':'*','hl':true,'rows':3, 'fl':'attr_filecontent, attr_resourcename'},
 		  'success': function(data) {
-
-/*			  if (searchString != null) {
-
-				console.log("no search")} else { */
-
 
 
 			document.getElementById ('searchBtn').onclick = function(){
-				document.write(JSON.stringify(data))
+				$("#search_result").text(JSON.stringify(data))
+			}
 
+			if
 
-			}}, //stringifies the data and sends it to the searchBtn
+		}, //stringifies the data and sends it to the searchBtn
 
 
 
 		  'error': function(data) {console.log('request failed. start solr first')},
 		  'dataType': 'jsonp',
 		  'jsonp': 'json.wrf',
-		  'type': 'post'
+		  'type': 'get'
 		});
 
 
@@ -42,9 +40,7 @@
 	<input type="text" id="searchString" value=>
 	<input type="button" id="searchBtn" value="submit">
 
-	<div id="log">initial content.......................</div>
-
-	<div id="myDiv"></div>
+	<div id="search_result" style="width: 500px; height: 500px; background-color: lightgreen; color: white;"></div>
 	</form>
 </body>
 </html>

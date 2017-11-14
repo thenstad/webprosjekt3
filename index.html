@@ -14,33 +14,50 @@
 
 		$.ajax({
 		  'url': 'http://localhost:8983/solr/wp3core/select/',
-		  'data': {'wt':'jsonp', 'q':'*','hl':true,'rows':3, 'fl':'attr_filecontent, attr_resourcename'},
+		  'data': {'wt':'jsonp',
+						'q': '*' , /* + searchStr,  <<<<<<----- TRY TO FIND A WAY TO GET TEXT INPUT PLACED AFTER THE ATTR_FILECONTENT */
+						'hl':true,
+						'rows':10,
+						'fl':'attr_filecontent'},
+						  'success': function(data) {
+
+						document.getElementById ('searchBtn').onclick = function(){
+							$("#searchRes").text(JSON.stringify(data))
+						}
+					}, //stringifies the data and sends it to the searchBtn. attr_xmpmm_documentid. attr_filecontent, attr_resourcename
+
+				  'error': function(data) {console.log('request failed. start solr first')},
+				  'dataType': 'jsonp',
+				  'jsonp': 'json.wrf',
+				  'type': 'get'
+		});
+
+/* 		$.ajax({
+		  'url': 'http://localhost:8983/solr/wp3core/select/',
+		  'data': {'wt':'jsonp', 'q':'*','hl':true,'rows':1, 'fl':'attr_xmpmm_documentid'},
 		  'success': function(data) {
 
-
-			document.getElementById ('searchBtn').onclick = function(){
-				$("#search_result").text(JSON.stringify(data))
-			}
-
-
-
-		}, //stringifies the data and sends it to the searchBtn
-
-
+				document.getElementById ('searchBtn').onclick = function(){
+					$("#searchRes").text(JSON.stringify(data))
+				}
+			}, //stringifies the data and sends it to the searchBtn. attr_xmpmm_documentid. attr_filecontent, attr_resourcename
 
 		  'error': function(data) {console.log('request failed. start solr first')},
 		  'dataType': 'jsonp',
 		  'jsonp': 'json.wrf',
 		  'type': 'get'
 		});
+*/
+
+
 
 
 	</script>
 	<form>
-	<input type="text" id="searchString" value=>
+	<input type="text" id="searchStr" value="">
 	<input type="button" id="searchBtn" value="submit">
 
-	<div id="search_result" style="width: 500px; height: 500px; background-color: lightgreen; color: white;"></div>
+	<div id="searchRes" style="width: 500px; min-height: 500px; background-color: lightgreen; color: white; font-size: 20px;"></div>
 	</form>
 </body>
 </html>

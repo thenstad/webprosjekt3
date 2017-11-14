@@ -8,10 +8,28 @@
 <body>
 	<script>
 
+	var searchBtn = document.getElementById("searchBtn");
+/*	var searchString = document.getElementById("searchString").value; */
+
 		$.ajax({
 		  'url': 'http://localhost:8983/solr/wp3core/select/',
-		  'data': {'wt':'jsonp', 'q':'*','hl':false,'rows':3, 'fl':'attr_filecontent'},
-		  'success': function(data) { document.write(JSON.stringify(data))}, //earlier: console.log(data) instead of document.write(JSON.stringify(data))
+		  'data': {'wt':'jsonp', 'q':'*','hl':true,'rows':3, 'fl':'attr_filecontent'},
+		  'success': function(data) {
+
+/*			  if (searchString != null) {
+
+				console.log("no search")} else { */
+
+
+
+			document.getElementById ('searchBtn').onclick = function(){
+				document.write(JSON.stringify(data))
+
+
+			}}, //stringifies the data and sends it to the searchBtn
+
+
+
 		  'error': function(data) {console.log('request failed. start solr first')},
 		  'dataType': 'jsonp',
 		  'jsonp': 'json.wrf',
@@ -21,10 +39,12 @@
 
 	</script>
 	<form>
-	  <input type="text" name="search" placeholder="Search..">
-	</form>
+	<input type="text" id="searchString" value=>
+	<input type="button" id="searchBtn" value="submit">
 
-	<p id="search_result">
-	</p>
+	<div id="log">initial content.......................</div>
+
+	<div id="myDiv"></div>
+	</form>
 </body>
 </html>

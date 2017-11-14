@@ -1,60 +1,121 @@
-2017-11-10 00:20:59.929 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2017-11-10 00:21:02.127 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
-2017-11-10 00:21:02.127 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-11-10 00:21:02.131 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0, Default config dir: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
-2017-11-10 00:21:02.186 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-10T00:21:02.135Z
-2017-11-10 00:21:02.187 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-11-10 00:21:02.286 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr
-2017-11-10 00:21:02.324 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\solr.xml
-2017-11-10 00:21:04.184 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr
-2017-11-10 00:21:04.184 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [wp3core]
-2017-11-10 00:21:04.200 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2017-11-10 00:21:04.486 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrResourceLoader [wp3core] Added 53 libs to classloader, from paths: [/C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/clustering/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/extraction/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/langid/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/contrib/velocity/lib, /C:/Users/thenstad/Desktop/webprosjekt3/solr-7.1.0/dist]
-2017-11-10 00:21:04.917 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.1.0
-2017-11-10 00:21:05.302 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema [wp3core] Schema name=default-config
-2017-11-10 00:21:06.633 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2017-11-10 00:21:06.745 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.CoreContainer Creating SolrCore 'wp3core' using configuration from instancedir C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core, trusted=true
-2017-11-10 00:21:06.817 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-11-10 00:21:06.829 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore [[wp3core] ] Opening new SolrCore at [C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core], dataDir=[C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core\data\]
-2017-11-10 00:21:06.881 INFO  (main) [   ] o.e.j.s.Server Started @9523ms
-2017-11-10 00:21:06.929 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-11-10 00:21:07.555 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=124
-2017-11-10 00:21:07.963 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-11-10 00:21:07.964 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-11-10 00:21:08.019 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-11-10 00:21:08.022 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-11-10 00:21:08.300 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.SolrIndexSearcher Opening [Searcher@27367bfa[wp3core] main]
-2017-11-10 00:21:08.324 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\thenstad\Desktop\webprosjekt3\solr-7.1.0\server\solr\wp3core\conf
-2017-11-10 00:21:08.359 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-11-10 00:21:08.370 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-11-10 00:21:08.395 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2017-11-10 00:21:08.550 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@27367bfa[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
-2017-11-10 00:21:08.550 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-10 00:21:08.551 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-11-10 00:21:08.566 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.SolrCore [wp3core] Registered new searcher Searcher@27367bfa[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
-2017-11-10 00:21:08.697 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*} hits=3 status=0 QTime=1661
-2017-11-10 00:21:16.317 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510273275909} status=0 QTime=2
-2017-11-10 00:21:16.381 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510273275911} status=0 QTime=66
-2017-11-10 00:21:18.367 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&_=1510273276148} hits=3 status=0 QTime=1
-2017-11-10 00:31:24.613 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321073516259893605_1510273884573&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510273884574} hits=3 status=0 QTime=12
-2017-11-10 00:35:50.591 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp} hits=3 status=0 QTime=4
-2017-11-10 00:35:50.652 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.s.HttpSolrCall Unable to write response, client closed connection or we are shutting down
-org.eclipse.jetty.io.EofException: Closed
-	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:620)
-	at org.apache.commons.io.output.ProxyOutputStream.write(ProxyOutputStream.java:55)
-	at org.apache.solr.response.QueryResponseWriterUtil$1.write(QueryResponseWriterUtil.java:54)
-	at java.io.OutputStream.write(Unknown Source)
-	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
-	at sun.nio.cs.StreamEncoder.implWrite(Unknown Source)
-	at sun.nio.cs.StreamEncoder.write(Unknown Source)
-	at java.io.OutputStreamWriter.write(Unknown Source)
-	at org.apache.solr.util.FastWriter.flush(FastWriter.java:140)
-	at org.apache.solr.util.FastWriter.flushBuffer(FastWriter.java:154)
-	at org.apache.solr.response.TextResponseWriter.close(TextResponseWriter.java:96)
-	at org.apache.solr.response.JSONResponseWriter.write(JSONResponseWriter.java:73)
-	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
-	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:806)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:535)
+2017-11-13 23:10:10.848 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2017-11-13 23:10:12.655 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
+2017-11-13 23:10:12.671 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-11-13 23:10:12.671 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0, Default config dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
+2017-11-13 23:10:13.015 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-13T23:10:12.671Z
+2017-11-13 23:10:13.030 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-11-13 23:10:13.484 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
+2017-11-13 23:10:13.562 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\solr.xml
+2017-11-13 23:10:19.476 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
+2017-11-13 23:10:19.487 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [wp3core]
+2017-11-13 23:10:19.493 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-11-13 23:10:20.033 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrResourceLoader [wp3core] Added 53 libs to classloader, from paths: [/C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/clustering/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/extraction/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/langid/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/velocity/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/dist]
+2017-11-13 23:10:21.547 INFO  (main) [   ] o.e.j.s.Server Started @16886ms
+2017-11-13 23:10:22.661 INFO  (qtp1911006827-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510614531609} status=0 QTime=836
+2017-11-13 23:10:22.757 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510614531609} status=0 QTime=932
+2017-11-13 23:10:22.758 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=767
+2017-11-13 23:10:22.855 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510614531609} status=0 QTime=34
+2017-11-13 23:10:24.148 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.1.0
+2017-11-13 23:10:25.253 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema [wp3core] Schema name=default-config
+2017-11-13 23:10:28.474 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2017-11-13 23:10:28.525 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.CoreContainer Creating SolrCore 'wp3core' using configuration from instancedir C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core, trusted=true
+2017-11-13 23:10:28.848 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-11-13 23:10:28.947 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore [[wp3core] ] Opening new SolrCore at [C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core], dataDir=[C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\data\]
+2017-11-13 23:10:29.145 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-11-13 23:10:30.604 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-11-13 23:10:30.604 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-11-13 23:10:30.877 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-11-13 23:10:30.877 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-11-13 23:10:31.520 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.SolrIndexSearcher Opening [Searcher@1c5b0359[wp3core] main]
+2017-11-13 23:10:31.713 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\conf
+2017-11-13 23:10:31.847 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-11-13 23:10:31.870 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-11-13 23:10:31.887 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2017-11-13 23:10:32.667 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1c5b0359[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
+2017-11-13 23:10:32.667 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-11-13 23:10:32.667 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-11-13 23:10:32.670 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.SolrCore [wp3core] Registered new searcher Searcher@1c5b0359[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
+2017-11-13 23:10:33.000 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32102660801904189882_1510614630941&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510614630942} hits=3 status=0 QTime=2053
+2017-11-13 23:10:33.823 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107847635508220292_1510614633815&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510614633816} hits=3 status=0 QTime=1
+2017-11-13 23:10:34.545 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210781248642387524_1510614634540&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510614634541} hits=3 status=0 QTime=0
+2017-11-13 23:10:45.897 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321010793220673259829_1510614645889&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510614645890} hits=3 status=0 QTime=0
+2017-11-13 23:13:25.005 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210365915774453224_1510614805000&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510614805001} hits=3 status=0 QTime=0
+2017-11-13 23:14:03.969 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32103734797301328594_1510614843964&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510614843965} hits=3 status=0 QTime=0
+2017-11-13 23:15:40.577 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109237305600896986_1510614940571&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510614940572} hits=3 status=0 QTime=1
+2017-11-13 23:25:41.980 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210055911600932967875_1510615541970&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510615541971} hits=3 status=0 QTime=0
+2017-11-13 23:25:43.875 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321010324431852043703_1510615543868&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510615543869} hits=3 status=0 QTime=0
+2017-11-13 23:29:50.369 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107973638590364496_1510615790358&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510615790359} hits=3 status=0 QTime=0
+2017-11-13 23:29:57.622 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210020777426055287096_1510615797609&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510615797610} hits=3 status=0 QTime=0
+2017-11-13 23:34:23.164 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210503691238646836_1510616063039&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616063040} hits=3 status=0 QTime=1
+2017-11-13 23:34:28.102 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32102848849024845401_1510616068094&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616068095} hits=3 status=0 QTime=0
+2017-11-13 23:34:44.478 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321043230659102354885_1510616084470&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616084471} hits=3 status=0 QTime=0
+2017-11-13 23:34:45.186 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108554783462703794_1510616085178&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616085179} hits=3 status=0 QTime=1
+2017-11-13 23:34:45.426 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210397017203968133_1510616085413&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616085414} hits=3 status=0 QTime=0
+2017-11-13 23:34:45.592 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109493637750639603_1510616085582&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616085583} hits=3 status=0 QTime=0
+2017-11-13 23:34:45.836 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106267476940419534_1510616085827&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616085828} hits=3 status=0 QTime=0
+2017-11-13 23:34:47.640 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108855763088766737_1510616087629&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616087630} hits=3 status=0 QTime=0
+2017-11-13 23:37:18.595 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321022380080471181185_1510616238586&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616238587} hits=3 status=0 QTime=0
+2017-11-13 23:37:29.645 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321023638626842591814_1510616249632&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616249633} hits=3 status=0 QTime=0
+2017-11-13 23:37:49.600 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321016544487697818155_1510616269588&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616269589} hits=3 status=0 QTime=0
+2017-11-13 23:37:54.249 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108965961427910931_1510616274240&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616274241} hits=3 status=0 QTime=0
+2017-11-13 23:38:13.302 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321043889673032428766_1510616293289&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616293290} hits=3 status=0 QTime=0
+2017-11-13 23:39:15.641 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106433711043116694_1510616355624&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616355625} hits=3 status=0 QTime=7
+2017-11-13 23:40:19.136 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery110203668040051204975_1510616399105&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616399106} hits=3 status=0 QTime=1
+2017-11-13 23:41:09.589 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321035710372914855504_1510616469579&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616469580} hits=3 status=0 QTime=0
+2017-11-13 23:41:39.499 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108356252768598784_1510616499476&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616499477} hits=3 status=0 QTime=0
+2017-11-13 23:41:48.368 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106465840531902682_1510616508360&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616508361} hits=3 status=0 QTime=0
+2017-11-13 23:41:52.647 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107156482039519414_1510616512637&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510616512638} hits=3 status=0 QTime=0
+2017-11-14 00:07:30.905 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={json.wrf=jQuery321041892398848547585_1510618050886&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618050887} hits=0 status=0 QTime=6
+2017-11-14 00:09:02.983 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=string&json.wrf=jQuery32108000845655077697_1510618142922&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618142923} hits=0 status=0 QTime=51
+2017-11-14 00:09:31.012 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=str&json.wrf=jQuery321009730296384660941_1510618171005&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618171006} hits=0 status=0 QTime=1
+2017-11-14 00:09:46.601 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=st&json.wrf=jQuery32104404148248888873_1510618186593&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618186594} hits=0 status=0 QTime=1
+2017-11-14 00:10:00.093 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=s&json.wrf=jQuery32107556259254662288_1510618200087&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618200088} hits=0 status=0 QTime=0
+2017-11-14 00:10:05.047 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=s&json.wrf=jQuery32107143052984091376_1510618205040&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618205041} hits=0 status=0 QTime=1
+2017-11-14 00:10:11.149 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321006397377608544619_1510618211145&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618211146} hits=3 status=0 QTime=0
+2017-11-14 00:12:21.474 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32105406207641593253_1510618341464&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618341465} hits=3 status=0 QTime=2
+2017-11-14 00:15:19.802 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108529323376196127_1510618519796&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618519797} hits=3 status=0 QTime=1
+2017-11-14 00:18:34.673 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107579873979533529_1510618714664&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618714665} hits=3 status=0 QTime=1
+2017-11-14 00:19:20.926 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107859414468858801_1510618760919&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618760920} hits=3 status=0 QTime=0
+2017-11-14 00:20:23.201 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109568239256673776_1510618823193&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618823194} hits=3 status=0 QTime=1
+2017-11-14 00:20:36.020 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107381748444762488_1510618836015&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618836016} hits=3 status=0 QTime=0
+2017-11-14 00:22:00.054 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210023246006299050048_1510618920048&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618920049} hits=3 status=0 QTime=1
+2017-11-14 00:22:00.132 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32103573678824175752_1510618920127&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618920128} hits=3 status=0 QTime=0
+2017-11-14 00:22:47.493 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210732085481851569_1510618967488&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510618967489} hits=3 status=0 QTime=0
+2017-11-14 00:25:55.043 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210247620539834835_1510619155035&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510619155036} hits=3 status=0 QTime=1
+2017-11-14 00:26:13.422 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107379284352170725_1510619173418&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510619173419} hits=3 status=0 QTime=0
+2017-11-14 00:32:18.389 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321041650383473369224_1510619538382&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510619538383} hits=3 status=0 QTime=1
+2017-11-14 00:32:23.055 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107198763448134771_1510619543049&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510619543050} hits=3 status=0 QTime=0
+2017-11-14 00:32:41.671 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210701731051428859_1510619561662&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510619561663} hits=3 status=0 QTime=0
+2017-11-14 00:32:45.268 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321030681630000453564_1510619565263&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510619565264} hits=3 status=0 QTime=0
+2017-11-14 00:37:22.560 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321004926610956292965_1510619842548&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510619842549} hits=3 status=0 QTime=0
+2017-11-14 00:39:31.399 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=\n&json.wrf=jQuery3210740207335329716_1510619971386&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510619971387} hits=0 status=0 QTime=1
+2017-11-14 00:39:42.986 ERROR (qtp1911006827-19) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '
+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    <TERM> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
 	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
 	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
@@ -84,24 +145,68 @@ org.eclipse.jetty.io.EofException: Closed
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
 	at java.lang.Thread.run(Unknown Source)
-2017-11-10 00:36:12.855 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp} hits=3 status=0 QTime=1
-2017-11-10 00:36:12.919 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.s.HttpSolrCall Unable to write response, client closed connection or we are shutting down
-org.eclipse.jetty.io.EofException: Closed
-	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:620)
-	at org.apache.commons.io.output.ProxyOutputStream.write(ProxyOutputStream.java:55)
-	at org.apache.solr.response.QueryResponseWriterUtil$1.write(QueryResponseWriterUtil.java:54)
-	at java.io.OutputStream.write(Unknown Source)
-	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
-	at sun.nio.cs.StreamEncoder.implWrite(Unknown Source)
-	at sun.nio.cs.StreamEncoder.write(Unknown Source)
-	at java.io.OutputStreamWriter.write(Unknown Source)
-	at org.apache.solr.util.FastWriter.flush(FastWriter.java:140)
-	at org.apache.solr.util.FastWriter.flushBuffer(FastWriter.java:154)
-	at org.apache.solr.response.TextResponseWriter.close(TextResponseWriter.java:96)
-	at org.apache.solr.response.JSONResponseWriter.write(JSONResponseWriter.java:73)
-	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
-	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:806)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:535)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '
+': Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    <TERM> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 1.
+Was expecting one of:
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    <TERM> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:166)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 00:39:42.988 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=%0a&json.wrf=jQuery32107807370920636618_1510619982865&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510619982866} status=400 QTime=111
+2017-11-14 00:39:50.206 ERROR (qtp1911006827-14) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '/
+': Lexical error at line 2, column 0.  Encountered: <EOF> after : "/\n"
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
 	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
 	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
@@ -131,34 +236,104 @@ org.eclipse.jetty.io.EofException: Closed
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
 	at java.lang.Thread.run(Unknown Source)
-2017-11-10 00:36:16.871 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321017790583560043505_1510274176846&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510274176847} hits=3 status=0 QTime=1
-2017-11-10 00:39:15.352 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321023381955701953716_1510274355325&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510274355326} hits=3 status=0 QTime=2
-2017-11-10 00:39:23.036 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32103156840915695025_1510274363004&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510274363005} hits=3 status=0 QTime=2
-2017-11-10 00:39:27.359 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321006410191474405313_1510274367337&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510274367338} hits=3 status=0 QTime=2
-2017-11-10 00:44:29.118 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321009349877247171312_1510274669084&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510274669085} hits=3 status=0 QTime=2
-2017-11-10 00:47:13.546 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108720578104611194_1510274833522&hl=true&fl=attr_date,+attr_filecontent&rows=5&wt=jsonp&_=1510274833523} hits=3 status=0 QTime=2
-2017-11-10 00:49:08.577 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109480561543275019_1510274948553&hl=true&fl=attr_date&rows=5&wt=jsonp&_=1510274948554} hits=3 status=0 QTime=2
-2017-11-10 00:49:50.870 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321029361826156627324_1510274990842&hl=true&fl=attr_filecontent&rows=5&wt=jsonp&_=1510274990843} hits=3 status=0 QTime=2
-2017-11-10 00:50:29.207 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32102000253255445552_1510275029183&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275029184} hits=3 status=0 QTime=1
-2017-11-10 00:50:56.104 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106855898841678356_1510275056080&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275056081} hits=3 status=0 QTime=1
-2017-11-10 00:51:32.442 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32103378496752987137_1510275092412&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275092413} hits=3 status=0 QTime=1
-2017-11-10 00:51:33.642 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321023641914622124527_1510275093618&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275093619} hits=3 status=0 QTime=1
-2017-11-10 00:52:01.868 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321004380672524223139_1510275121832&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275121833} hits=3 status=0 QTime=1
-2017-11-10 00:53:45.531 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321012010169517358493_1510275225508&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275225509} hits=3 status=0 QTime=1
-2017-11-10 00:54:11.711 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321011464746328276232_1510275251685&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275251686} hits=3 status=0 QTime=1
-2017-11-10 00:55:37.535 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321007047855265710834_1510275337511&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275337512} hits=3 status=0 QTime=1
-2017-11-10 00:55:44.146 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32104125582511626886_1510275344118&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275344119} hits=3 status=0 QTime=7
-2017-11-10 01:01:26.507 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32104223179148464209_1510275686482&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275686483} hits=3 status=0 QTime=1
-2017-11-10 01:01:54.872 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321046716718266061563_1510275714859&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275714860} hits=3 status=0 QTime=1
-2017-11-10 01:02:33.006 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108753032572448323_1510275752991&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510275752992} hits=3 status=0 QTime=2
-2017-11-10 01:10:12.689 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321035110742314909316_1510276212657&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510276212658} hits=3 status=0 QTime=1
-2017-11-10 01:11:44.484 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108154306736578207_1510276304463&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510276304464} hits=3 status=0 QTime=1
-2017-11-10 01:17:18.263 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32103185068792668728_1510276638233&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510276638234} hits=3 status=0 QTime=1
-2017-11-10 01:21:24.701 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321019301330491233415_1510276884669&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510276884670} hits=3 status=0 QTime=10
-2017-11-10 01:26:01.997 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32103126701014280975_1510277161969&hl=false&fl=attr_filecontent&rows=3&wt=jsonp&_=1510277161970} hits=3 status=0 QTime=1
-2017-11-10 01:28:15.810 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=58940486
-2017-11-10 01:28:15.814 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2017-11-10 01:28:15.818 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2017-11-10 01:28:15.819 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2017-11-10 01:28:15.846 INFO  (coreCloseExecutor-12-thread-1) [   x:wp3core] o.a.s.c.SolrCore [wp3core]  CLOSING SolrCore org.apache.solr.core.SolrCore@74da9a7e
-2017-11-10 01:28:15.847 INFO  (coreCloseExecutor-12-thread-1) [   x:wp3core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wp3core, tag=1960483454
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '/
+': Lexical error at line 2, column 0.  Encountered: <EOF> after : "/\n"
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 2, column 0.  Encountered: <EOF> after : "/\n"
+	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
+	at org.apache.solr.parser.QueryParser.jj_scan_token(QueryParser.java:775)
+	at org.apache.solr.parser.QueryParser.jj_3R_3(QueryParser.java:639)
+	at org.apache.solr.parser.QueryParser.jj_3_1(QueryParser.java:630)
+	at org.apache.solr.parser.QueryParser.jj_2_1(QueryParser.java:599)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:140)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 00:39:50.207 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=/%0a&json.wrf=jQuery32105220701023971253_1510619990196&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510619990197} status=400 QTime=1
+2017-11-14 00:39:57.178 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=\n&json.wrf=jQuery32109524806822525813_1510619997168&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510619997169} hits=0 status=0 QTime=0
+2017-11-14 00:40:03.978 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=\%0a&json.wrf=jQuery3210518974541639758_1510620003967&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510620003968} hits=0 status=0 QTime=3
+2017-11-14 00:40:11.255 ERROR (qtp1911006827-20) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '/
+': Lexical error at line 2, column 0.  Encountered: <EOF> after : "/\n"
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '/
+': Lexical error at line 2, column 0.  Encountered: <EOF> after : "/\n"
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 2, column 0.  Encountered: <EOF> after : "/\n"
+	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
+	at org.apache.solr.parser.QueryParser.jj_scan_token(QueryParser.java:775)
+	at org.apache.solr.parser.QueryParser.jj_3R_3(QueryParser.java:639)
+	at org.apache.solr.parser.QueryParser.jj_3_1(QueryParser.java:630)
+	at org.apache.solr.parser.QueryParser.jj_2_1(QueryParser.java:599)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:140)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 00:40:11.255 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=/%0a&json.wrf=jQuery321027528377700454887_1510620011245&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510620011246} status=400 QTime=1
+2017-11-14 00:40:28.197 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=n&json.wrf=jQuery32108918934618552237_1510620028185&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510620028186} hits=0 status=0 QTime=0
+2017-11-14 00:41:20.475 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321014156423742114743_1510620080465&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510620080466} hits=3 status=0 QTime=0
+2017-11-14 00:48:14.771 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321048532860210695206_1510620494759&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510620494760} hits=3 status=0 QTime=0
+2017-11-14 00:48:22.169 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108116384361491615_1510620502160&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510620502161} hits=3 status=0 QTime=0
+2017-11-14 00:55:31.629 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210600326035561596_1510620931618&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510620931619} hits=3 status=0 QTime=1
+2017-11-14 00:55:42.450 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107917840913451235_1510620942416&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510620942417} hits=3 status=0 QTime=0
+2017-11-14 00:57:06.929 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321009795545746946321_1510621026918&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510621026919} hits=3 status=0 QTime=1
+2017-11-14 01:02:41.700 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321035066754059158756_1510621361687&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510621361688} hits=3 status=0 QTime=1
+2017-11-14 01:04:48.740 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321009706588317445175_1510621488730&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510621488731} hits=3 status=0 QTime=0
+2017-11-14 01:14:15.928 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108452614346712766_1510622055916&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510622055917} hits=3 status=0 QTime=2
+2017-11-14 01:14:23.480 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108245916328998921_1510622063471&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510622063472} hits=3 status=0 QTime=0
+2017-11-14 01:14:23.836 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321024211383416497712_1510622063828&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510622063829} hits=3 status=0 QTime=0
+2017-11-14 01:18:09.810 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109768263353781201_1510622289695&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510622289696} hits=3 status=0 QTime=0
+2017-11-14 01:25:03.923 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321007333433494720443_1510622703913&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510622703914} hits=3 status=0 QTime=0
+2017-11-14 01:25:11.048 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321016022321183268762_1510622711039&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510622711040} hits=3 status=0 QTime=0
+2017-11-14 01:25:11.509 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32105873229005789067_1510622711501&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510622711502} hits=3 status=0 QTime=0
+2017-11-14 01:25:16.968 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106549309515858626_1510622716961&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510622716962} hits=3 status=0 QTime=0
+2017-11-14 01:25:17.360 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321041450004173605093_1510622717351&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510622717352} hits=3 status=0 QTime=0
+2017-11-14 01:25:57.053 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=58940486
+2017-11-14 01:25:57.093 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2017-11-14 01:25:57.093 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2017-11-14 01:25:57.093 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2017-11-14 01:25:57.097 INFO  (coreCloseExecutor-12-thread-1) [   x:wp3core] o.a.s.c.SolrCore [wp3core]  CLOSING SolrCore org.apache.solr.core.SolrCore@6a933797
+2017-11-14 01:25:57.098 INFO  (coreCloseExecutor-12-thread-1) [   x:wp3core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wp3core, tag=1788032919

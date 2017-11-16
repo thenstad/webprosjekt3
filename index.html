@@ -8,8 +8,9 @@
 <body>
 	<script>
 
-	var searchBtn = document.getElementById("searchBtn");
+
 	var searchStr = document.getElementById("searchStr");
+	var searchBtn = document.getElementById("searchBtn");
 /*	var searchString = document.getElementById("searchString").value; */
 
 		$.ajax({
@@ -18,19 +19,31 @@
 						'q': '*' , /* + searchStr,  <<<<<<----- TRY TO FIND A WAY TO GET TEXT INPUT PLACED AFTER THE ATTR_FILECONTENT */
 						'hl':true,
 						'rows':10,
-						'fl':'attr_filecontent'},
+						'fl':'*'},
 						  'success': function(data) {
 
 						document.getElementById ('searchBtn').onclick = function(){
-							$("#searchRes").text(JSON.stringify(data))
-						}
-					}, //stringifies the data and sends it to the searchBtn. attr_xmpmm_documentid. attr_filecontent, attr_resourcename
+							$("#searchRes").text(JSON.stringify(data).replaceAll('m', 'YOLOSWAG4LIFE'))}},
 
 				  'error': function(data) {console.log('request failed. start solr first')},
 				  'dataType': 'jsonp',
 				  'jsonp': 'json.wrf',
 				  'type': 'get'
-		});
+		}
+
+	);
+
+	String.prototype.replaceAll = function(s1, s2) {
+		 return this.replace(
+			  new RegExp(  s1.replace(/[.^$*+?()[{\|]/g, '\\$&'),  'g'  ),
+			  s2
+		 );
+	};
+
+
+
+
+
 
 /* 		$.ajax({
 		  'url': 'http://localhost:8983/solr/wp3core/select/',

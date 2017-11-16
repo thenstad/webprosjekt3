@@ -1,142 +1,165 @@
-2017-11-14 08:19:16.856 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2017-11-14 08:19:19.707 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
-2017-11-14 08:19:19.707 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-11-14 08:19:19.707 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0, Default config dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
-2017-11-14 08:19:19.848 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-14T08:19:19.707Z
-2017-11-14 08:19:19.864 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-11-14 08:19:20.335 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
-2017-11-14 08:19:20.397 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\solr.xml
-2017-11-14 08:19:27.501 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
-2017-11-14 08:19:27.501 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [wp3core]
-2017-11-14 08:19:27.532 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2017-11-14 08:19:28.332 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrResourceLoader [wp3core] Added 53 libs to classloader, from paths: [/C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/clustering/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/extraction/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/langid/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/velocity/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/dist]
-2017-11-14 08:19:35.138 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.1.0
-2017-11-14 08:19:35.185 INFO  (main) [   ] o.e.j.s.Server Started @27568ms
-2017-11-14 08:19:36.067 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=609
-2017-11-14 08:19:36.387 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema [wp3core] Schema name=default-config
-2017-11-14 08:19:40.460 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2017-11-14 08:19:40.798 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.CoreContainer Creating SolrCore 'wp3core' using configuration from instancedir C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core, trusted=true
-2017-11-14 08:19:40.917 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-11-14 08:19:41.011 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore [[wp3core] ] Opening new SolrCore at [C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core], dataDir=[C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\data\]
-2017-11-14 08:19:41.262 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-11-14 08:19:43.141 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-11-14 08:19:43.141 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-11-14 08:19:43.285 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-11-14 08:19:43.285 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-11-14 08:19:44.065 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.SolrIndexSearcher Opening [Searcher@2f9bde94[wp3core] main]
-2017-11-14 08:19:44.229 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\conf
-2017-11-14 08:19:44.373 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-11-14 08:19:44.397 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-11-14 08:19:44.417 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2017-11-14 08:19:44.885 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2f9bde94[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
-2017-11-14 08:19:44.885 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-14 08:19:44.885 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-11-14 08:19:44.893 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.SolrCore [wp3core] Registered new searcher Searcher@2f9bde94[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
-2017-11-14 08:19:45.913 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107270806860624526_1510647582393&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510647582394} hits=3 status=0 QTime=3509
-2017-11-14 08:19:53.760 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321022201838028544807_1510647593732&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510647593733} hits=3 status=0 QTime=2
-2017-11-14 08:20:04.839 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32105084239351193787_1510647604807&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510647604808} hits=3 status=0 QTime=1
-2017-11-14 08:20:05.248 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32103973564956757927_1510647605236&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510647605237} hits=3 status=0 QTime=1
-2017-11-14 08:20:41.929 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321044521543277457143_1510647641876&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510647641877} hits=3 status=0 QTime=1
-2017-11-14 08:20:48.052 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32101661069351796054_1510647648039&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510647648040} hits=3 status=0 QTime=1
-2017-11-14 08:31:13.104 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106090462149971954_1510648273088&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510648273089} hits=3 status=0 QTime=2
-2017-11-14 08:33:36.881 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106702404463246052_1510648416865&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510648416866} hits=3 status=0 QTime=2
-2017-11-14 08:36:49.314 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210009120221395289896_1510648609298&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510648609299} hits=3 status=0 QTime=2
-2017-11-14 08:37:01.313 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321008873810656791892_1510648621301&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510648621302} hits=3 status=0 QTime=2
-2017-11-14 08:44:07.120 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510649046772} status=0 QTime=2
-2017-11-14 08:44:07.176 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510649046776} status=0 QTime=51
-2017-11-14 08:44:07.224 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510649046776} status=0 QTime=44
-2017-11-14 08:44:10.211 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510649046772} status=0 QTime=0
-2017-11-14 08:44:10.227 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1510649050187} status=0 QTime=7
-2017-11-14 08:44:10.247 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/replication params={wt=json&command=details&_=1510649050187} status=0 QTime=10
-2017-11-14 08:44:10.255 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1510649046776&ts=1510649046776} status=503 QTime=2
-2017-11-14 08:44:10.343 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510649046776} status=0 QTime=129
-2017-11-14 08:44:10.343 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/system params={wt=json&_=1510649050187} status=0 QTime=94
-2017-11-14 08:44:13.679 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510649046772} status=0 QTime=0
-2017-11-14 08:44:13.739 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510649046776} status=0 QTime=59
-2017-11-14 08:44:15.959 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&_=1510649053579} hits=3 status=0 QTime=0
-2017-11-14 08:46:08.943 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&wt=json&_=1510649053579} hits=3 status=0 QTime=1
-2017-11-14 08:46:12.983 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&wt=json} hits=3 status=0 QTime=0
-2017-11-14 08:46:58.131 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&wt=jsonq%3Dff} hits=3 status=0 QTime=1
-2017-11-14 08:46:58.155 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.s.HttpSolrCall Unable to write response, client closed connection or we are shutting down
-org.eclipse.jetty.io.EofException: Closed
-	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:620)
-	at org.apache.commons.io.output.ProxyOutputStream.write(ProxyOutputStream.java:55)
-	at org.apache.solr.response.QueryResponseWriterUtil$1.write(QueryResponseWriterUtil.java:54)
-	at java.io.OutputStream.write(Unknown Source)
-	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
-	at sun.nio.cs.StreamEncoder.implWrite(Unknown Source)
-	at sun.nio.cs.StreamEncoder.write(Unknown Source)
-	at java.io.OutputStreamWriter.write(Unknown Source)
-	at org.apache.solr.util.FastWriter.flush(FastWriter.java:140)
-	at org.apache.solr.util.FastWriter.flushBuffer(FastWriter.java:154)
-	at org.apache.solr.response.TextResponseWriter.close(TextResponseWriter.java:96)
-	at org.apache.solr.response.JSONResponseWriter.write(JSONResponseWriter.java:73)
-	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
-	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:806)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:535)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-2017-11-14 08:50:22.537 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=ff&json.wrf=jsonp1510649418648&wt=json%3D} hits=0 status=0 QTime=104
-2017-11-14 08:50:26.615 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=f&json.wrf=jsonp1510649418649&wt=json%3D} hits=0 status=0 QTime=2
-2017-11-14 08:56:11.011 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=hello&json.wrf=?&wt=json%3D} hits=0 status=0 QTime=6
-2017-11-14 08:59:14.927 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=d&json.wrf=?&wt=json%3D} hits=0 status=0 QTime=2
-2017-11-14 08:59:19.426 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107729876700447209_1510649959402&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510649959403} hits=3 status=0 QTime=1
-2017-11-14 09:05:29.939 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210704239627600658_1510650329912&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510650329913} hits=3 status=0 QTime=3
-2017-11-14 09:07:35.545 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510650455221} status=0 QTime=1
-2017-11-14 09:07:35.641 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510650455225} status=0 QTime=94
-2017-11-14 09:07:35.697 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510650455225} status=0 QTime=50
-2017-11-14 09:07:40.340 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510650455221} status=0 QTime=0
-2017-11-14 09:07:40.344 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1510650460324} status=0 QTime=1
-2017-11-14 09:07:40.352 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/replication params={wt=json&command=details&_=1510650460324} status=0 QTime=7
-2017-11-14 09:07:40.364 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1510650455225&ts=1510650455225} status=503 QTime=0
-2017-11-14 09:07:40.448 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510650455225} status=0 QTime=106
-2017-11-14 09:07:40.448 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/system params={wt=json&_=1510650460324} status=0 QTime=88
-2017-11-14 09:07:42.680 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510650455221} status=0 QTime=0
-2017-11-14 09:07:42.732 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510650455225} status=0 QTime=50
-2017-11-14 09:07:44.646 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&_=1510650462553} hits=3 status=0 QTime=0
-2017-11-14 09:07:51.558 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&wt=json&_=1510650462553} hits=3 status=0 QTime=0
-2017-11-14 09:08:02.935 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&wt=xml&_=1510650462553} hits=3 status=0 QTime=0
-2017-11-14 09:11:22.115 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&wt=json&_=1510650462553} hits=3 status=0 QTime=1
-2017-11-14 09:11:30.872 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&facet=on&wt=json&_=1510650462553} hits=3 status=0 QTime=61
-2017-11-14 09:11:38.581 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&wt=json&_=1510650462553} hits=3 status=0 QTime=0
-2017-11-14 09:27:35.069 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=hello&wt=json&_=1510650462553} hits=0 status=0 QTime=8
-2017-11-14 09:27:39.957 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=he&wt=json&_=1510650462553} hits=0 status=0 QTime=2
-2017-11-14 09:27:43.189 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={wt=json&_=1510650462553} hits=0 status=0 QTime=2
-2017-11-14 09:27:47.908 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&wt=json&_=1510650462553} hits=3 status=0 QTime=0
-2017-11-14 09:27:55.202 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&wt=json&_=1510650462553} hits=3 status=0 QTime=0
-2017-11-14 09:28:33.993 ERROR (qtp1911006827-17) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Expected identifier at pos 0 str=':['
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:361)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:114)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:100)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:76)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:139)
+2017-11-14 12:37:53.369 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2017-11-14 12:37:55.169 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
+2017-11-14 12:37:55.169 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-11-14 12:37:55.169 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0, Default config dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
+2017-11-14 12:37:55.209 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-14T12:37:55.173Z
+2017-11-14 12:37:55.213 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-11-14 12:37:55.253 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
+2017-11-14 12:37:55.269 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\solr.xml
+2017-11-14 12:37:56.766 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
+2017-11-14 12:37:56.778 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [wp3core]
+2017-11-14 12:37:56.798 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-11-14 12:37:56.927 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrResourceLoader [wp3core] Added 53 libs to classloader, from paths: [/C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/clustering/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/extraction/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/langid/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/velocity/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/dist]
+2017-11-14 12:37:58.075 INFO  (main) [   ] o.e.j.s.Server Started @6490ms
+2017-11-14 12:37:58.135 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.1.0
+2017-11-14 12:37:58.807 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema [wp3core] Schema name=default-config
+2017-11-14 12:38:00.268 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2017-11-14 12:38:00.377 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.CoreContainer Creating SolrCore 'wp3core' using configuration from instancedir C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core, trusted=true
+2017-11-14 12:38:00.424 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-11-14 12:38:00.440 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore [[wp3core] ] Opening new SolrCore at [C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core], dataDir=[C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\data\]
+2017-11-14 12:38:00.534 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-11-14 12:38:00.596 INFO  (qtp1911006827-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=83
+2017-11-14 12:38:01.270 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-11-14 12:38:01.274 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-11-14 12:38:01.326 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-11-14 12:38:01.326 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-11-14 12:38:01.598 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.SolrIndexSearcher Opening [Searcher@6319de61[wp3core] main]
+2017-11-14 12:38:01.614 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\conf
+2017-11-14 12:38:01.650 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-11-14 12:38:01.666 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-11-14 12:38:01.690 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2017-11-14 12:38:01.802 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6319de61[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
+2017-11-14 12:38:01.802 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-11-14 12:38:01.802 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-11-14 12:38:01.814 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.SolrCore [wp3core] Registered new searcher Searcher@6319de61[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
+2017-11-14 12:38:01.958 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321008301386569886349_1510663080762&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510663080763} hits=3 status=0 QTime=1062
+2017-11-14 12:39:45.578 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321007133280793097496_1510663185550&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510663185551} hits=3 status=0 QTime=2
+2017-11-14 12:40:15.326 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321023478446616534265_1510663215301&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510663215302} hits=3 status=0 QTime=1
+2017-11-14 12:40:22.784 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321009900326031138373_1510663222763&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510663222764} hits=3 status=0 QTime=1
+2017-11-14 12:40:44.916 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321037291667306774334_1510663244891&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510663244892} hits=3 status=0 QTime=1
+2017-11-14 12:48:15.869 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32102170509232021709_1510663695857&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510663695858} hits=3 status=0 QTime=0
+2017-11-14 12:49:16.082 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32105420107433892429_1510663756074&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510663756075} hits=3 status=0 QTime=0
+2017-11-14 12:51:48.668 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32104716452294236513_1510663908660&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510663908661} hits=3 status=0 QTime=0
+2017-11-14 12:51:48.938 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107068345946359298_1510663908934&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510663908935} hits=3 status=0 QTime=0
+2017-11-14 12:51:49.114 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321044096697564295617_1510663909109&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510663909110} hits=3 status=0 QTime=0
+2017-11-14 12:51:59.897 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321021614582753644562_1510663919889&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510663919890} hits=3 status=0 QTime=0
+2017-11-14 12:52:07.035 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321037167580302225556_1510663927029&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510663927030} hits=3 status=0 QTime=0
+2017-11-14 12:57:21.032 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321020804402416592582_1510664241021&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510664241022} hits=3 status=0 QTime=1
+2017-11-14 13:06:21.222 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510664781072} status=0 QTime=1
+2017-11-14 13:06:21.275 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510664781072} status=0 QTime=54
+2017-11-14 13:06:21.316 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510664781072} status=0 QTime=38
+2017-11-14 13:06:25.720 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510664781072} status=0 QTime=0
+2017-11-14 13:06:25.728 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1510664785713} status=0 QTime=5
+2017-11-14 13:06:25.732 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/replication params={wt=json&command=details&_=1510664785714} status=0 QTime=9
+2017-11-14 13:06:25.735 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1510664781072&ts=1510664781072} status=503 QTime=3
+2017-11-14 13:06:25.800 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510664781072} status=0 QTime=79
+2017-11-14 13:06:25.800 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/system params={wt=json&_=1510664785713} status=0 QTime=74
+2017-11-14 13:06:27.572 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510664781072} status=0 QTime=0
+2017-11-14 13:06:27.610 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510664781072} status=0 QTime=38
+2017-11-14 13:06:32.134 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&_=1510664787540} hits=3 status=0 QTime=0
+2017-11-14 13:07:32.063 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&_=1510664787540} hits=3 status=0 QTime=0
+2017-11-14 13:12:34.171 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321038123501054085707_1510665154160&hl=true&fl=attr_filecontent,+attr_resourcename&rows=1&wt=jsonp&_=1510665154161} hits=3 status=0 QTime=2
+2017-11-14 13:15:09.382 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32105937475521192597_1510665309375&hl=true&fl=attr_xmpmm_documentid&rows=1&wt=jsonp&_=1510665309376} hits=3 status=0 QTime=0
+2017-11-14 13:36:21.577 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109483125085736324_1510666581566&hl=true&fl=attr_xmpmm_documentid&rows=1&wt=jsonp&_=1510666581567} hits=3 status=0 QTime=3
+2017-11-14 13:38:46.355 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666726232} status=0 QTime=0
+2017-11-14 13:38:46.421 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666726233} status=0 QTime=65
+2017-11-14 13:38:46.458 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666726233} status=0 QTime=32
+2017-11-14 13:38:49.522 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666726232} status=0 QTime=0
+2017-11-14 13:38:49.527 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1510666726232} status=0 QTime=3
+2017-11-14 13:38:49.554 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666726233} status=0 QTime=31
+2017-11-14 13:38:49.572 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666726232} status=0 QTime=0
+2017-11-14 13:38:49.575 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1510666726232} status=0 QTime=1
+2017-11-14 13:38:49.604 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666726233} status=0 QTime=31
+2017-11-14 13:38:59.249 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:38:59.254 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1510666739190} status=0 QTime=2
+2017-11-14 13:38:59.283 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=33
+2017-11-14 13:39:03.082 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:39:03.088 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1510666743074&since=0} status=0 QTime=2
+2017-11-14 13:39:03.122 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=39
+2017-11-14 13:39:04.025 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:39:04.027 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1510666744020} status=0 QTime=0
+2017-11-14 13:39:04.055 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=29
+2017-11-14 13:39:25.490 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:39:25.531 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=39
+2017-11-14 13:39:25.564 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1510666765481} status=0 QTime=65
+2017-11-14 13:39:28.917 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:39:28.920 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1510666768911} status=0 QTime=0
+2017-11-14 13:39:28.923 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/replication params={wt=json&command=details&_=1510666768911} status=0 QTime=3
+2017-11-14 13:39:28.986 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/system params={wt=json&_=1510666768911} status=0 QTime=62
+2017-11-14 13:39:28.986 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=68
+2017-11-14 13:39:29.059 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1510666739190&ts=1510666739190} status=503 QTime=0
+2017-11-14 13:39:31.197 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:39:31.205 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1510666768911} status=0 QTime=6
+2017-11-14 13:39:31.207 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/config params={wt=json&_=1510666771180} status=0 QTime=7
+2017-11-14 13:39:31.231 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=33
+2017-11-14 13:39:31.526 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1510666768911} status=0 QTime=217
+2017-11-14 13:40:45.825 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:40:45.828 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1510666768911} status=0 QTime=1
+2017-11-14 13:40:45.843 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/config params={wt=json&_=1510666771180} status=0 QTime=0
+2017-11-14 13:40:45.855 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=29
+2017-11-14 13:40:45.971 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1510666768911} status=0 QTime=97
+2017-11-14 13:41:35.922 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:41:35.927 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1510666768911} status=0 QTime=1
+2017-11-14 13:41:35.932 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/config params={wt=json&_=1510666771180} status=0 QTime=1
+2017-11-14 13:41:35.955 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=31
+2017-11-14 13:41:36.045 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1510666768911} status=0 QTime=90
+2017-11-14 13:42:44.056 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:42:44.062 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1510666768911} status=0 QTime=1
+2017-11-14 13:42:44.068 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/config params={wt=json&_=1510666771180} status=0 QTime=0
+2017-11-14 13:42:44.091 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=32
+2017-11-14 13:42:44.207 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1510666768911} status=0 QTime=102
+2017-11-14 13:43:02.513 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={fl=attr_access_permission_extract_for_accessibility&wt=json&_=1510666768911} status=0 QTime=6
+2017-11-14 13:43:05.165 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={fl=attr_access_permission_extract_for_accessibility&numTerms=2&wt=json&_=1510666768911} status=0 QTime=2
+2017-11-14 13:43:29.477 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:43:29.479 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1510666768911} status=0 QTime=0
+2017-11-14 13:43:29.482 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/config params={wt=json&_=1510666771180} status=0 QTime=0
+2017-11-14 13:43:29.510 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=32
+2017-11-14 13:43:29.726 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1510666768911} status=0 QTime=210
+2017-11-14 13:46:52.188 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:46:52.192 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1510666768911} status=0 QTime=1
+2017-11-14 13:46:52.193 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/config params={wt=json&_=1510666771180} status=0 QTime=0
+2017-11-14 13:46:52.223 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=35
+2017-11-14 13:46:52.304 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1510666768911} status=0 QTime=77
+2017-11-14 13:47:18.126 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:47:18.130 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/config params={wt=json&_=1510666771180} status=0 QTime=0
+2017-11-14 13:47:18.130 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1510666768911} status=0 QTime=3
+2017-11-14 13:47:18.161 INFO  (qtp1911006827-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=35
+2017-11-14 13:47:18.260 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1510666768911} status=0 QTime=86
+2017-11-14 13:58:10.026 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510666739190} status=0 QTime=0
+2017-11-14 13:58:10.063 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510666739190} status=0 QTime=36
+2017-11-14 14:02:34.944 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&_=1510667889999} hits=3 status=0 QTime=0
+2017-11-14 14:02:39.034 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&wt=xml&_=1510667889999} hits=3 status=0 QTime=0
+2017-11-14 14:03:32.426 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32102700470374198103_1510668212419&hl=true&fl=attr_xmpmm_documentid&rows=1&wt=jsonp&_=1510668212420} hits=3 status=0 QTime=1
+2017-11-14 14:26:39.868 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&wt=json&_=1510667889999} hits=3 status=0 QTime=1
+2017-11-14 14:28:19.368 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+safety&wt=json&_=1510667889999} hits=3 status=0 QTime=90
+2017-11-14 14:28:21.863 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+safety&wt=json&_=1510667889999} hits=3 status=0 QTime=1
+2017-11-14 14:28:25.731 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+safety&wt=json&_=1510667889999} hits=3 status=0 QTime=1
+2017-11-14 14:28:43.576 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+safety&wt=json&_=1510667889999} hits=3 status=0 QTime=1
+2017-11-14 14:28:59.884 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+safety&wt=json&_=1510667889999} hits=3 status=0 QTime=1
+2017-11-14 14:29:10.356 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent&wt=json&_=1510667889999} hits=0 status=0 QTime=4
+2017-11-14 14:29:19.261 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+safety&wt=json&_=1510667889999} hits=3 status=0 QTime=1
+2017-11-14 14:29:21.346 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+safety&wt=json&_=1510667889999} hits=3 status=0 QTime=1
+2017-11-14 14:29:21.358 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+safety&wt=json&_=1510667889999} hits=3 status=0 QTime=0
+2017-11-14 14:31:12.964 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+slavishly&wt=json&_=1510667889999} hits=1 status=0 QTime=2
+2017-11-14 14:37:58.854 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent+null&json.wrf=jQuery32109744341206166287_1510670278715&hl=true&fl=attr_xmpmm_documentid&rows=1&wt=jsonp&_=1510670278716} hits=0 status=0 QTime=121
+2017-11-14 14:43:01.892 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent+null&json.wrf=jQuery321021064112030593862_1510670581875&hl=true&fl=attr_xmpmm_documentid&rows=1&wt=jsonp&_=1510670581876} hits=0 status=0 QTime=2
+2017-11-14 14:43:06.555 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent+null&json.wrf=jQuery32102667230677497239_1510670586544&hl=true&fl=attr_xmpmm_documentid&rows=1&wt=jsonp&_=1510670586545} hits=0 status=0 QTime=1
+2017-11-14 14:43:49.476 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent+null&json.wrf=jQuery321043413523804435084_1510670629462&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510670629463} hits=0 status=0 QTime=1
+2017-11-14 14:43:52.063 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent+null&json.wrf=jQuery32103839987532812945_1510670632050&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510670632051} hits=0 status=0 QTime=1
+2017-11-14 14:43:53.348 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent+null&json.wrf=jQuery32108173067498902795_1510670633290&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510670633291} hits=0 status=0 QTime=1
+2017-11-14 14:44:15.528 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent+&json.wrf=jQuery32102439931919327758_1510670655505&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510670655506} hits=0 status=0 QTime=1
+2017-11-14 14:44:22.568 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent+&json.wrf=jQuery321009730904173208588_1510670662557&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510670662558} hits=0 status=0 QTime=1
+2017-11-14 14:44:32.636 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106266264489621058_1510670672614&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510670672615} hits=3 status=0 QTime=2
+2017-11-14 14:44:34.711 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106827179191632089_1510670674701&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510670674702} hits=3 status=0 QTime=1
+2017-11-14 14:44:38.462 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321036936127563830645_1510670678453&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510670678454} hits=3 status=0 QTime=1
+2017-11-14 14:48:18.251 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontentnull&json.wrf=jQuery32105323349575877827_1510670898226&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510670898227} hits=0 status=0 QTime=2
+2017-11-14 14:48:21.952 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontentnull&json.wrf=jQuery32109641632149745787_1510670901940&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510670901941} hits=0 status=0 QTime=1
+2017-11-14 14:55:50.106 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontentnull&json.wrf=jQuery321039228477836143827_1510671350082&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510671350083} hits=0 status=0 QTime=2
+2017-11-14 15:04:12.985 ERROR (qtp1911006827-18) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
 	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
@@ -171,22 +194,34 @@ org.eclipse.jetty.io.EofException: Closed
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=':['
-	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
-	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
-	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:363)
-	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:82)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
 	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:302)
-	... 38 more
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
 
-2017-11-14 09:28:33.997 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321026350124950073206_1510651713958&hl=true&fl="attr_filecontent":[&rows=3&wt=jsonp&_=1510651713959} status=400 QTime=18
-2017-11-14 09:29:06.185 ERROR (qtp1911006827-13) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:369)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:114)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:100)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:76)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:139)
+2017-11-14 15:04:12.987 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery32108054388367763117_1510671852969&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510671852970} status=400 QTime=8
+2017-11-14 15:04:14.335 ERROR (qtp1911006827-22) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
 	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
@@ -221,72 +256,38 @@ Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 1 str='['
-	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
-	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
-	at org.apache.solr.search.QueryParsing.parseLocalParams(QueryParsing.java:95)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:257)
-	... 38 more
-
-2017-11-14 09:29:06.189 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321015530762590096292_1510651746157&hl=true&fl=attr_filecontent:[&rows=3&wt=jsonp&_=1510651746158} status=400 QTime=4
-2017-11-14 09:29:17.401 ERROR (qtp1911006827-18) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Expected identifier at pos 0 str=''
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:361)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:114)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:100)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:76)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:139)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=''
-	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
-	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
-	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:363)
-	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:82)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
 	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:302)
-	... 38 more
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
 
-2017-11-14 09:29:17.401 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109914397283207612_1510651757378&hl=true&fl=attr_filecontent:&rows=3&wt=jsonp&_=1510651757379} status=400 QTime=2
-2017-11-14 09:29:31.388 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107811023844402474_1510651771369&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510651771370} hits=3 status=0 QTime=2
-2017-11-14 09:29:35.429 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321023564866817949448_1510651775405&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510651775406} hits=3 status=0 QTime=1
-2017-11-14 09:30:18.070 ERROR (qtp1911006827-15) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Expected identifier at pos 0 str=':['
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:361)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:114)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:100)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:76)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:139)
+2017-11-14 15:04:14.336 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery32106793820904696002_1510671854330&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510671854331} status=400 QTime=2
+2017-11-14 15:07:03.864 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+undefined&json.wrf=jQuery32101114031161711655_1510672023856&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672023857} hits=0 status=0 QTime=2
+2017-11-14 15:07:06.857 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+undefined&json.wrf=jQuery32103128271130549889_1510672026740&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672026741} hits=0 status=0 QTime=0
+2017-11-14 15:07:09.835 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+undefined&json.wrf=jQuery32108486941120487401_1510672029829&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672029830} hits=0 status=0 QTime=0
+2017-11-14 15:07:25.385 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+undefined&json.wrf=jQuery32107006299940663829_1510672045376&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672045377} hits=0 status=0 QTime=0
+2017-11-14 15:07:33.789 ERROR (qtp1911006827-19) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
 	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
@@ -321,22 +322,34 @@ Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=':['
-	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
-	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
-	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:363)
-	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:82)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
 	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:302)
-	... 38 more
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
 
-2017-11-14 09:30:18.070 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&fl="attr_filecontent":[&wt=json&_=1510650462553} status=400 QTime=2
-2017-11-14 09:30:27.378 ERROR (qtp1911006827-17) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Expected identifier at pos 0 str=':'
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:361)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:114)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:100)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:76)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:139)
+2017-11-14 15:07:33.789 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery32109966901120233673_1510672053770&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672053771} status=400 QTime=1
+2017-11-14 15:07:36.392 ERROR (qtp1911006827-14) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
 	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
@@ -371,22 +384,34 @@ Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=':'
-	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
-	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
-	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:363)
-	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:82)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
 	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:302)
-	... 38 more
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
 
-2017-11-14 09:30:27.378 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&fl="attr_filecontent":&wt=json&_=1510650462553} status=400 QTime=3
-2017-11-14 09:30:31.573 ERROR (qtp1911006827-17) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Expected identifier at pos 0 str=':'
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:361)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:114)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:100)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:76)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:139)
+2017-11-14 15:07:36.393 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery32105975724862629987_1510672056387&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672056388} status=400 QTime=1
+2017-11-14 15:07:44.684 ERROR (qtp1911006827-15) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
 	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
@@ -421,32 +446,601 @@ Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=':'
-	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
-	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
-	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:363)
-	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:82)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
 	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:302)
-	... 38 more
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
 
-2017-11-14 09:30:31.573 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&fl="attr_filecontent":&wt=json&_=1510650462553} status=400 QTime=2
-2017-11-14 09:30:36.786 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*:*&fl=attr_filecontent&wt=json&_=1510650462553} hits=3 status=0 QTime=0
-2017-11-14 09:30:46.671 ERROR (qtp1911006827-21) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '*attr_filecontent:*': Encountered " ":" ": "" at line 1, column 17.
+2017-11-14 15:07:44.684 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery32105058968638033348_1510672064677&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672064678} status=400 QTime=1
+2017-11-14 15:08:52.339 ERROR (qtp1911006827-22) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 15:08:52.339 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery321016754964025317198_1510672132331&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672132332} status=400 QTime=1
+2017-11-14 15:08:56.019 ERROR (qtp1911006827-19) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 15:08:56.019 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery32107396683081025877_1510672136011&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672136012} status=400 QTime=2
+2017-11-14 15:08:56.429 ERROR (qtp1911006827-20) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 15:08:56.430 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery321009323744914013155_1510672136418&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672136419} status=400 QTime=2
+2017-11-14 15:08:56.619 ERROR (qtp1911006827-13) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 15:08:56.619 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery3210531049673830359_1510672136612&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672136613} status=400 QTime=2
+2017-11-14 15:08:56.791 ERROR (qtp1911006827-18) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 15:08:56.792 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery32106806297078474128_1510672136781&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672136782} status=400 QTime=2
+2017-11-14 15:08:56.924 ERROR (qtp1911006827-17) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 15:08:56.925 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery321022799748677279585_1510672136916&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672136917} status=400 QTime=2
+2017-11-14 15:08:57.745 ERROR (qtp1911006827-14) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 15:08:57.745 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery32106393332337274138_1510672137730&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672137731} status=400 QTime=2
+2017-11-14 15:09:26.569 ERROR (qtp1911006827-15) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 15:09:26.570 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery32105936937846082524_1510672166563&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672166564} status=400 QTime=1
+2017-11-14 15:09:35.232 ERROR (qtp1911006827-22) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: [object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 26.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
+
+2017-11-14 15:09:35.233 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+[object+Object]&json.wrf=jQuery321020438220742121027_1510672175223&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672175224} status=400 QTime=2
+2017-11-14 15:11:13.428 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+null&json.wrf=jQuery321028381831322065554_1510672273299&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672273300} hits=0 status=0 QTime=121
+2017-11-14 15:11:15.488 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+null&json.wrf=jQuery321009440586286690866_1510672275482&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672275483} hits=0 status=0 QTime=0
+2017-11-14 15:11:19.859 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+null&json.wrf=jQuery32106552696136905856_1510672279853&hl=true&fl=attr_filecontent&rows=1&wt=jsonp&_=1510672279854} hits=0 status=0 QTime=0
+2017-11-14 15:12:07.277 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+null&json.wrf=jQuery321031013926538964265_1510672327271&hl=true&fl=attr_filecontent&rows=10&wt=jsonp&_=1510672327272} hits=0 status=0 QTime=0
+2017-11-14 15:12:10.822 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+null&json.wrf=jQuery32107760579890428416_1510672330814&hl=true&fl=attr_filecontent&rows=10&wt=jsonp&_=1510672330815} hits=0 status=0 QTime=0
+2017-11-14 15:13:38.844 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+null&json.wrf=jQuery32103360911835087701_1510672418833&hl=true&fl=attr_filecontent&rows=10&wt=jsonp&_=1510672418834} hits=0 status=0 QTime=0
+2017-11-14 15:13:41.310 INFO  (qtp1911006827-20) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+null&json.wrf=jQuery321036495075138222255_1510672421305&hl=true&fl=attr_filecontent&rows=10&wt=jsonp&_=1510672421306} hits=0 status=0 QTime=0
+2017-11-14 15:14:15.110 ERROR (qtp1911006827-13) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: ': Encountered "<EOF>" at line 1, column 18.
 Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
     <BAREOPER> ...
     "(" ...
     "*" ...
-    "^" ...
     <QUOTED> ...
     <TERM> ...
-    <FUZZY_SLOP> ...
     <PREFIXTERM> ...
     <WILDTERM> ...
     <REGEXPTERM> ...
@@ -491,21 +1085,13 @@ Was expecting one of:
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse '*attr_filecontent:*': Encountered " ":" ": "" at line 1, column 17.
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: ': Encountered "<EOF>" at line 1, column 18.
 Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
     <BAREOPER> ...
     "(" ...
     "*" ...
-    "^" ...
     <QUOTED> ...
     <TERM> ...
-    <FUZZY_SLOP> ...
     <PREFIXTERM> ...
     <WILDTERM> ...
     <REGEXPTERM> ...
@@ -520,21 +1106,13 @@ Was expecting one of:
 	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
 	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
 	... 34 more
-Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 17.
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 18.
 Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
     <BAREOPER> ...
     "(" ...
     "*" ...
-    "^" ...
     <QUOTED> ...
     <TERM> ...
-    <FUZZY_SLOP> ...
     <PREFIXTERM> ...
     <WILDTERM> ...
     <REGEXPTERM> ...
@@ -546,17 +1124,30 @@ Was expecting one of:
     
 	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
 	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:324)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
 	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
 	... 37 more
 
-2017-11-14 09:30:46.671 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*attr_filecontent:*&wt=json&_=1510650462553} status=400 QTime=104
-2017-11-14 09:31:08.025 ERROR (qtp1911006827-22) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Expected identifier at pos 0 str=''
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:361)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:114)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:100)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:76)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:139)
+2017-11-14 15:14:15.110 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+&json.wrf=jQuery321010514098071227629_1510672455101&hl=true&fl=attr_filecontent&rows=10&wt=jsonp&_=1510672455102} status=400 QTime=1
+2017-11-14 15:14:18.773 ERROR (qtp1911006827-17) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: ': Encountered "<EOF>" at line 1, column 18.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
 	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
@@ -591,204 +1182,59 @@ Was expecting one of:
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=''
-	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
-	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
-	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:363)
-	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:82)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'attr_filecontent: ': Encountered "<EOF>" at line 1, column 18.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:216)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:48)
 	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:302)
-	... 38 more
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 18.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:884)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:766)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:324)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:212)
+	... 37 more
 
-2017-11-14 09:31:08.029 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={fl=attr_filecontent:&wt=json&_=1510650462553} status=400 QTime=2
-2017-11-14 09:31:12.392 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={fl=attr_filecontent&wt=json&_=1510650462553} hits=0 status=0 QTime=0
-2017-11-14 09:31:21.170 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={df=attr_filecontent:&wt=json&_=1510650462553} hits=0 status=0 QTime=0
-2017-11-14 09:31:21.556 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={df=attr_filecontent:&wt=json&_=1510650462553} hits=0 status=0 QTime=0
-2017-11-14 09:31:25.693 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={df=attr_filecontent:&wt=json&_=1510650462553} hits=0 status=0 QTime=0
-2017-11-14 09:31:29.172 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={df=attr_filecontent&wt=json&_=1510650462553} hits=0 status=0 QTime=0
-2017-11-14 09:31:43.695 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&fl=attr_filecontent&wt=json&_=1510650462553} hits=3 status=0 QTime=0
-2017-11-14 09:32:44.782 ERROR (qtp1911006827-16) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Expected identifier at pos 0 str=':["*"'
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:361)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:114)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:100)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:76)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:139)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=':["*"'
-	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
-	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
-	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:363)
-	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:82)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:302)
-	... 38 more
-
-2017-11-14 09:32:44.782 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&fl="attr_filecontent":["*"&wt=json&_=1510650462553} status=400 QTime=3
-2017-11-14 09:32:49.224 ERROR (qtp1911006827-14) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Expected identifier at pos 0 str=':["'
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:361)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:114)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:100)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:76)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:139)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str=':["'
-	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
-	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
-	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:363)
-	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:82)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:302)
-	... 38 more
-
-2017-11-14 09:32:49.228 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&fl="attr_filecontent":["&wt=json&_=1510650462553} status=400 QTime=2
-2017-11-14 09:32:53.533 ERROR (qtp1911006827-15) [   x:wp3core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Missing end quote for string at pos 0 str='"attr_filecontent'
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:361)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:114)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:100)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:76)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:139)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.search.SyntaxError: Missing end quote for string at pos 0 str='"attr_filecontent'
-	at org.apache.solr.search.StrParser.getQuotedString(StrParser.java:278)
-	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:310)
-	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:82)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:302)
-	... 38 more
-
-2017-11-14 09:32:53.533 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&fl="attr_filecontent&wt=json&_=1510650462553} status=400 QTime=2
-2017-11-14 09:32:57.038 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&fl=attr_filecontent&wt=json&_=1510650462553} hits=3 status=0 QTime=0
-2017-11-14 09:33:18.092 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent&fl=attr_filecontent&wt=json&_=1510650462553} hits=0 status=0 QTime=1
-2017-11-14 09:33:23.840 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=a&fl=attr_filecontent&wt=json&_=1510650462553} hits=0 status=0 QTime=1
-2017-11-14 09:33:29.833 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=hello&fl=attr_filecontent&wt=json&_=1510650462553} hits=0 status=0 QTime=1
-2017-11-14 09:33:35.587 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=then&fl=attr_filecontent&wt=json&_=1510650462553} hits=0 status=0 QTime=1
-2017-11-14 09:34:11.232 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={fl=attr_filecontent&wt=json&_=1510650462553} hits=0 status=0 QTime=0
-2017-11-14 09:34:13.906 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={fl=attr_filecontent&wt=json&_=1510650462553} hits=0 status=0 QTime=0
-2017-11-14 09:34:20.178 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&fl=attr_filecontent&wt=json&_=1510650462553} hits=3 status=0 QTime=0
-2017-11-14 09:34:32.221 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&wt=json&_=1510650462553} hits=3 status=0 QTime=1
-2017-11-14 09:35:13.889 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108999246291965368_1510652113865&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510652113866} hits=3 status=0 QTime=1
-2017-11-14 09:35:17.539 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107633894769705796_1510652117519&hl=true&fl=attr_filecontent&rows=3&wt=jsonp&_=1510652117520} hits=3 status=0 QTime=1
-2017-11-14 09:39:04.374 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321017282603897011217_1510652344350&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510652344351} hits=3 status=0 QTime=2
-2017-11-14 09:41:40.022 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107142606987634734_1510652499998&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510652499999} hits=3 status=0 QTime=1
-2017-11-14 09:41:50.137 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109097941968020875_1510652510101&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510652510102} hits=3 status=0 QTime=2
-2017-11-14 09:43:11.289 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107594913530937879_1510652591261&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510652591262} hits=3 status=0 QTime=2
-2017-11-14 09:43:12.071 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108567280770344639_1510652592050&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510652592051} hits=3 status=0 QTime=1
-2017-11-14 09:43:49.721 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32103693923590190644_1510652629685&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510652629686} hits=3 status=0 QTime=1
-2017-11-14 09:49:06.763 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321043378630269528684_1510652946731&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510652946732} hits=3 status=0 QTime=2
-2017-11-14 09:49:12.240 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109350356785462597_1510652952212&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510652952213} hits=3 status=0 QTime=2
-2017-11-14 09:49:17.350 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108224697833450771_1510652957331&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510652957332} hits=3 status=0 QTime=1
-2017-11-14 09:49:44.025 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321039934375289866875_1510652984002&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510652984003} hits=3 status=0 QTime=1
-2017-11-14 09:49:47.590 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210035980332882349586_1510652987563&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510652987564} hits=3 status=0 QTime=1
-2017-11-14 09:50:04.058 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108317758322959243_1510653004031&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510653004032} hits=3 status=0 QTime=1
-2017-11-14 09:50:07.260 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321003950608549628898_1510653007240&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510653007241} hits=3 status=0 QTime=1
-2017-11-14 09:51:12.207 INFO  (qtp1911006827-16) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32105461967625860904_1510653072183&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510653072184} hits=3 status=0 QTime=2
-2017-11-14 09:51:23.406 INFO  (qtp1911006827-21) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery321033430473400785576_1510653083383&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510653083384} hits=3 status=0 QTime=1
-2017-11-14 09:51:26.740 INFO  (qtp1911006827-13) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32106120139746907658_1510653086721&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510653086722} hits=3 status=0 QTime=1
-2017-11-14 09:51:36.378 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32104868565595125771_1510653096359&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510653096360} hits=3 status=0 QTime=1
-2017-11-14 09:52:38.922 INFO  (qtp1911006827-22) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109503015304295341_1510653158902&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510653158903} hits=3 status=0 QTime=1
-2017-11-14 09:52:44.868 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32107932378033078842_1510653164848&hl=true&fl=attr_filecontent,+attr_resourcename&rows=3&wt=jsonp&_=1510653164849} hits=3 status=0 QTime=1
-2017-11-14 09:55:48.327 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=58940486
-2017-11-14 09:55:48.327 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2017-11-14 09:55:48.327 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2017-11-14 09:55:48.327 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2017-11-14 09:55:48.327 INFO  (coreCloseExecutor-13-thread-1) [   x:wp3core] o.a.s.c.SolrCore [wp3core]  CLOSING SolrCore org.apache.solr.core.SolrCore@22f1075b
-2017-11-14 09:55:48.327 INFO  (coreCloseExecutor-13-thread-1) [   x:wp3core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wp3core, tag=586221403
+2017-11-14 15:14:18.774 INFO  (qtp1911006827-17) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=attr_filecontent:+&json.wrf=jQuery32103345334519141323_1510672458766&hl=true&fl=attr_filecontent&rows=10&wt=jsonp&_=1510672458767} status=400 QTime=2
+2017-11-14 15:14:50.604 INFO  (qtp1911006827-14) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32103843818889955999_1510672490595&hl=true&fl=attr_filecontent&rows=10&wt=jsonp&_=1510672490596} hits=3 status=0 QTime=1
+2017-11-14 15:14:53.539 INFO  (qtp1911006827-19) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery3210914911956318867_1510672493533&hl=true&fl=attr_filecontent&rows=10&wt=jsonp&_=1510672493534} hits=3 status=0 QTime=0
+2017-11-14 15:15:33.553 INFO  (qtp1911006827-15) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32109320612516728937_1510672533548&hl=true&fl=attr_filecontent&rows=10&wt=jsonp&_=1510672533549} hits=3 status=0 QTime=0
+2017-11-14 15:15:38.581 INFO  (qtp1911006827-18) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=/solr path=/select params={q=*&json.wrf=jQuery32108206375162511081_1510672538576&hl=true&fl=attr_filecontent&rows=10&wt=jsonp&_=1510672538577} hits=3 status=0 QTime=0
+2017-11-14 15:16:00.142 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=58940486
+2017-11-14 15:16:00.142 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2017-11-14 15:16:00.142 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2017-11-14 15:16:00.142 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2017-11-14 15:16:00.142 INFO  (coreCloseExecutor-12-thread-1) [   x:wp3core] o.a.s.c.SolrCore [wp3core]  CLOSING SolrCore org.apache.solr.core.SolrCore@1903a216
+2017-11-14 15:16:00.142 INFO  (coreCloseExecutor-12-thread-1) [   x:wp3core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wp3core, tag=419668502

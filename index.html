@@ -1,78 +1,142 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<html lang="en">
+ <head>
+	<!-- The following 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <link href="site/css/bootstrap-4.0.0-beta-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS file -->
+  <link rel="stylesheet" type="text/css" href="site/css/style.css">
+  <!-- Custom font -->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <title>PTIL Search Engine</title>
 </head>
 <body>
-	<form>
-	<input type="text" id="searchStr" placeholder="Search..." value="*">
-	<input type="button" id="searchBtn" value="submit">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+		 <div class="navbar-header">
+			<a class="navbar-brand" href="#">PTIL Webprosjekt 3</a>
+		 </div>
+		 <ul class="nav navbar-nav">
+			<li><a href="#footer">About</a></li>
+		 </ul>
+	  </div>
+	</nav>
 
-	<div id="searchRes" style="width: 500px; min-height: 500px; background-color: lightgreen; color: white; font-size: 20px;"></div>
-	</form>
+	<!-- Massive jumbotron with search field -->
+	<div class="jumbotron_style">
+		<div class="jumbotron text-center" style="background-color: #00879E; color: white;">
+			<h1>Petroleum Safety Authority Norway</h1>
+				<div class="col-lg-4" style="margin: 0 auto; float: none;">
+				<!-- INPUT GROUP -->
+					<form class="navbar-search">
+					  <div id="search-div">
+							<input type="text" class="search-query span8" placeholder="Search for.." onfocus="this.value = this.value;" id="solrstrap-searchbox" name="q">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	<!-- INSERT SEARCH RESULT HERE -->
+	<div class="main_content">
+		<div class="col-lg-12 row" style="margin: 0 auto; float: none;">
+
+<!-- EEEEEEEEEEEEEEEEEEEEEEEEEEND -->
+			<!--actual visible HTML-->
+
+			<div class="container">
+			  <div class="row">
+				 <div id="solrstrap-facets" class="span4"></div>
+				 <div id="solrstrap-hits" class="span8"></div>
+			  </div>
+			</div>
 
 
+			<!--Handlebars layout templates-->
+			<script type="text/x-handlebars-template" id="hit-template">
+			<div class="entry">
+			{{#if link}}
+			<a href="{{link}}" target="_blank">{{{title}}}</a><br>
+			{{{text}}}
+			{{else}}
+			<strong>{{{title}}}</strong><br>
+			{{{text}}}
+			{{/if}}
+			</div>
+			</script>
+			<script type="text/x-handlebars-template" id="result-summary-template">
+			<div id="result-summary">
+			{{totalresults}} results for <strong><i>{{query}}</i></strong>
+			</div>
+			</script>
+			<script type="text/x-handlebars-template" id="nav-template">
+			<div class="facet">
+			<span class="nav-title" data-facetname="{{title}}">{{facet_displayname title}}</span><br>
+			{{#each navs}}
+			<a href='#' title='{{@key}} ({{this}})'>{{@key}}</a> ({{this}})<br/>
+			{{/each}}
+			</div>
+			</script>
+			<script type="text/x-handlebars-template" id="chosen-nav-template">
+			<div class="chosen-facet">
+			<span class="nav-title">Filters</span><br>
+			{{#each this}}
+			<a class="close" href="#">&times;</a>
+			<a href='#' class="selectedNav"
+				data-filter="{{name}}:{{value}}"
+				title="{{facet_displayname name}}:{{value}}">{{facet_displayname name}}:{{value}}</a><br>
+			{{/each}}
+			</div>
+			</script>
+<!-- EEEEEEEEEEEEEEEEEEEEEEEEEEND -->
+		  </div>
+	  </div>
 
+	<!-- Footer cards -->
+	<footer class="footer">
+		<div class="col-lg-12 row">
+		  <div class="col-lg-4">
+			 <div class="card">
+				<div class="card-body">
+				  <h4 class="card-title">Visit their website</h4>
+				  <p class="card-text">Visit PTIL's main website</p>
+				  <a href="http://www.ptil.no" class="btn btn-light" style="background-color: #3FD2EA; color: white;">PTIL.NO</a>
+				</div>
+			 </div>
+		  </div>
+		  <div class="col-lg-4">
+			 <div class="card">
+				<div class="card-body">
+				  <h4 class="card-title">PTIL</h4>
+				  <p class="card-text">Petroleum Safety Authority Norway</p>
+				  <a href="http://www.ntnu.no" class="btn btn-light" style="background-color: #3FD2EA; color: white;">NTNU.NO</a>
+				</div>
+			 </div>
+		  </div>
+		  <div class="col-lg-4">
+			 <div class="card">
+				<div class="card-body">
+				  <h4 class="card-title">WP3</h4>
+				  <p class="card-text">Web project 3 at NTNU Gjøvik</p>
+				  <a href="http://www.ntnu.no" class="btn btn-light" style="background-color: #3FD2EA; color: white;">NTNU.NO</a>
+				</div>
+			 </div>
+		  </div>
+	  </div>
+	</footer>
+	<!-- Scripts -->
+	<!--load scripts at the bottom-->
 
+<!-- EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEND -->
 
-	<script>
-
-	var searchString = document.getElementById("searchStr").value;
-	var searchBtn = document.getElementById("searchBtn");
-
-
-
-		$.ajax({
-		  'url': 'http://localhost:8983/solr/wp3/select/',
-		  'data': {'wt':'jsonp',
-						'q': searchString,
-						'hl':false,
-						'rows':10,
-						'fl':'id'},
-						  'success': function(data) {
-
-						document.getElementById ('searchBtn').onclick = function(){
-							$("#searchRes").text(JSON.stringify(data).replaceAll('pastesomerandomwordhere', 'withsomethingyouwanttoreplaceitwithhere'))}
-
-
-
-
-						},
-
-				  'error': function(data) {console.log('request failed. start solr first')},
-				  'dataType': 'jsonp',
-				  'jsonp': 'json.wrf',
-				  'type': 'get'
-		}
-
-	);
-
-	String.prototype.replaceAll = function(s1, s2) {
-		 return this.replace(
-			  new RegExp(  s1.replace(/[.^$*+?()[{\|]/g, '\\$&'),  'g'  ),
-			  s2
-		 );
-	};
-
-/* 		$.ajax({
-		  'url': 'http://localhost:8983/solr/wp3core/select/',
-		  'data': {'wt':'jsonp', 'q':'*','hl':true,'rows':1, 'fl':'attr_xmpmm_documentid'},
-		  'success': function(data) {
-
-				document.getElementById ('searchBtn').onclick = function(){
-					$("#searchRes").text(JSON.stringify(data))
-				}
-			}, //stringifies the data and sends it to the searchBtn. attr_xmpmm_documentid. attr_filecontent, attr_resourcename
-
-		  'error': function(data) {console.log('request failed. start solr first')},
-		  'dataType': 'jsonp',
-		  'jsonp': 'json.wrf',
-		  'type': 'get'
-		});
-*/
-
-	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ba-bbq/1.2.1/jquery.ba-bbq.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+	<script type='text/javascript' src="site/js/solrstrap.js"></script>
+<!-- EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEND -->
 </body>
 </html>

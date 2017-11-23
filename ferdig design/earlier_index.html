@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<form>
+	<input type="text" id="searchStr" placeholder="Search..." value="*">
+	<input type="button" id="searchBtn" value="submit">
+
+	<div id="searchRes" style="width: 500px; min-height: 500px; background-color: lightgreen; color: white; font-size: 20px;"></div>
+	</form>
+
+
+
+
+
+	<script>
+
+	var searchString = document.getElementById("searchStr").value;
+	var searchBtn = document.getElementById("searchBtn");
+
+
+
+		$.ajax({
+		  'url': 'http://localhost:8983/solr/wp3/select/',
+		  'data': {'wt':'jsonp',
+						'q': searchString,
+						'hl':false,
+						'rows':10,
+						'fl':'id'},
+						  'success': function(data) {
+
+						document.getElementById ('searchBtn').onclick = function(){
+							$("#searchRes").text(JSON.stringify(data).replaceAll('pastesomerandomwordhere', 'withsomethingyouwanttoreplaceitwithhere'))}
+
+
+
+
+						},
+
+				  'error': function(data) {console.log('request failed. start solr first')},
+				  'dataType': 'jsonp',
+				  'jsonp': 'json.wrf',
+				  'type': 'get'
+		}
+
+	);
+
+	String.prototype.replaceAll = function(s1, s2) {
+		 return this.replace(
+			  new RegExp(  s1.replace(/[.^$*+?()[{\|]/g, '\\$&'),  'g'  ),
+			  s2
+		 );
+	};
+
+/* 		$.ajax({
+		  'url': 'http://localhost:8983/solr/wp3core/select/',
+		  'data': {'wt':'jsonp', 'q':'*','hl':true,'rows':1, 'fl':'attr_xmpmm_documentid'},
+		  'success': function(data) {
+
+				document.getElementById ('searchBtn').onclick = function(){
+					$("#searchRes").text(JSON.stringify(data))
+				}
+			}, //stringifies the data and sends it to the searchBtn. attr_xmpmm_documentid. attr_filecontent, attr_resourcename
+
+		  'error': function(data) {console.log('request failed. start solr first')},
+		  'dataType': 'jsonp',
+		  'jsonp': 'json.wrf',
+		  'type': 'get'
+		});
+*/
+
+	</script>
+</body>
+</html>

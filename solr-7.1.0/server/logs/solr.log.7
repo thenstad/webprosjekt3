@@ -1,213 +1,54 @@
-2017-11-17 13:22:36.566 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2017-11-17 13:22:37.420 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
-2017-11-17 13:22:37.420 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-11-17 13:22:37.420 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0, Default config dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
-2017-11-17 13:22:37.479 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-17T13:22:37.422Z
-2017-11-17 13:22:37.480 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-11-17 13:22:37.615 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
-2017-11-17 13:22:37.648 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\solr.xml
-2017-11-17 13:22:40.283 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
-2017-11-17 13:22:40.296 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [wp3core]
-2017-11-17 13:22:40.301 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2017-11-17 13:22:40.652 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrResourceLoader [wp3core] Added 48 libs to classloader, from paths: [/C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/extraction/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/langid/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/velocity/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/dist]
-2017-11-17 13:22:42.000 INFO  (main) [   ] o.e.j.s.Server Started @9640ms
-2017-11-17 13:22:44.640 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510924964165} status=0 QTime=7
-2017-11-17 13:22:44.672 INFO  (qtp1911006827-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=1000
-2017-11-17 13:22:44.713 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510924964166} status=0 QTime=78
-2017-11-17 13:22:44.715 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510924964166} status=0 QTime=80
-2017-11-17 13:22:44.843 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2017-11-17 13:22:44.848 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
-2017-11-17 13:22:45.204 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema [wp3core] Schema name=default-config
-2017-11-17 13:22:46.487 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2017-11-17 13:22:46.539 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.CoreContainer Creating SolrCore 'wp3core' using configuration from instancedir C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core, trusted=true
-2017-11-17 13:22:46.788 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-11-17 13:22:46.828 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore [[wp3core] ] Opening new SolrCore at [C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core], dataDir=[C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\data\]
-2017-11-17 13:22:46.953 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-11-17 13:22:47.401 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-11-17 13:22:47.401 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-11-17 13:22:47.449 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-11-17 13:22:47.450 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-11-17 13:22:47.770 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.SolrIndexSearcher Opening [Searcher@2f3bf51c[wp3core] main]
-2017-11-17 13:22:47.808 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\conf
-2017-11-17 13:22:47.848 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-11-17 13:22:47.866 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-11-17 13:22:47.873 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
-2017-11-17 13:22:47.875 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-11-17 13:22:47.886 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-11-17 13:22:47.886 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@30cb825b, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
-2017-11-17 13:22:47.888 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.c.SolrCore [wp3core]  CLOSING SolrCore org.apache.solr.core.SolrCore@30cb825b
-2017-11-17 13:22:47.888 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wp3core, tag=818643547
-2017-11-17 13:22:47.888 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2f3bf51c[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
-2017-11-17 13:22:47.911 ERROR (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.h.RequestHandlerBase java.lang.NullPointerException
-	at org.apache.solr.handler.component.SearchHandler.initComponents(SearchHandler.java:183)
-	at org.apache.solr.handler.component.SearchHandler.getComponents(SearchHandler.java:203)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:250)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
-	at org.apache.solr.core.QuerySenderListener.newSearcher(QuerySenderListener.java:74)
-	at org.apache.solr.core.SolrCore.lambda$getSearcher$17(SolrCore.java:2256)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:188)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-11-17 13:22:47.912 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.S.Request [wp3core]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=500 QTime=8
-2017-11-17 13:22:47.913 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-17 13:22:47.913 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-11-17 13:22:47.913 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2017-11-17 13:22:47.913 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
-2017-11-17 13:22:47.913 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
-2017-11-17 13:22:47.986 INFO  (searcherExecutor-7-thread-1-processing-x:wp3core) [   x:wp3core] o.a.s.c.SolrCore [wp3core] Registered new searcher Searcher@2f3bf51c[wp3core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C3)))}
-2017-11-17 13:22:48.011 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
-java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [wp3core]
-	at java.util.concurrent.FutureTask.report(Unknown Source)
-	at java.util.concurrent.FutureTask.get(Unknown Source)
-	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:671)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:176)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:188)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Unable to create core [wp3core]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1045)
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:642)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	... 5 more
-Caused by: org.apache.solr.common.SolrException: Error initializing QueryElevationComponent.
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:989)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:844)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1029)
-	... 7 more
-Caused by: org.apache.solr.common.SolrException: Error initializing QueryElevationComponent.
-	at org.apache.solr.handler.component.QueryElevationComponent.inform(QueryElevationComponent.java:249)
-	at org.apache.solr.core.SolrResourceLoader.inform(SolrResourceLoader.java:696)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:968)
-	... 9 more
-Caused by: org.apache.solr.common.SolrException: QueryElevationComponent missing config file: 'elevate.xml
-either: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\conf\elevate.xml or C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\data\elevate.xml must exist, but not both.
-	at org.apache.solr.handler.component.QueryElevationComponent.inform(QueryElevationComponent.java:226)
-	... 11 more
-2017-11-17 14:10:44.632 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510927844519} status=0 QTime=4
-2017-11-17 14:10:44.735 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510927844520} status=0 QTime=107
-2017-11-17 14:10:44.779 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510927844520} status=0 QTime=32
-2017-11-17 15:21:42.585 INFO  (qtp1911006827-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510932102504} status=0 QTime=0
-2017-11-17 15:21:42.681 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510932102505} status=0 QTime=95
-2017-11-17 15:21:42.721 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510932102505} status=0 QTime=36
-2017-11-17 15:21:49.612 INFO  (qtp1911006827-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1510932109469} status=0 QTime=0
-2017-11-17 15:21:49.677 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510932109470} status=0 QTime=64
-2017-11-17 15:21:49.730 INFO  (qtp1911006827-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1510932109470} status=0 QTime=48
-2017-11-17 15:21:54.926 ERROR (qtp1911006827-20) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'wp3core' is not available due to init failure: Error initializing QueryElevationComponent.
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1472)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:267)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:480)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Error initializing QueryElevationComponent.
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:989)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:844)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1029)
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:642)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:188)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Error initializing QueryElevationComponent.
-	at org.apache.solr.handler.component.QueryElevationComponent.inform(QueryElevationComponent.java:249)
-	at org.apache.solr.core.SolrResourceLoader.inform(SolrResourceLoader.java:696)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:968)
-	... 9 more
-Caused by: org.apache.solr.common.SolrException: QueryElevationComponent missing config file: 'elevate.xml
-either: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\conf\elevate.xml or C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\data\elevate.xml must exist, but not both.
-	at org.apache.solr.handler.component.QueryElevationComponent.inform(QueryElevationComponent.java:226)
-	... 11 more
-
-2017-11-17 15:21:58.546 ERROR (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'wp3core' is not available due to init failure: Error initializing QueryElevationComponent.
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1472)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:267)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:480)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Error initializing QueryElevationComponent.
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:989)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:844)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1029)
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:642)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:188)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Error initializing QueryElevationComponent.
-	at org.apache.solr.handler.component.QueryElevationComponent.inform(QueryElevationComponent.java:249)
-	at org.apache.solr.core.SolrResourceLoader.inform(SolrResourceLoader.java:696)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:968)
-	... 9 more
-Caused by: org.apache.solr.common.SolrException: QueryElevationComponent missing config file: 'elevate.xml
-either: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\conf\elevate.xml or C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3core\data\elevate.xml must exist, but not both.
-	at org.apache.solr.handler.component.QueryElevationComponent.inform(QueryElevationComponent.java:226)
-	... 11 more
-
-2017-11-17 15:22:28.975 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=58940486
-2017-11-17 15:22:28.975 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2017-11-17 15:22:28.975 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2017-11-17 15:22:28.976 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2017-11-23 12:40:38.234 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2017-11-23 12:40:43.654 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
+2017-11-23 12:40:43.657 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-11-23 12:40:43.657 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0, Default config dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
+2017-11-23 12:40:45.364 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-23T12:40:43.660Z
+2017-11-23 12:40:45.366 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-11-23 12:40:46.441 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
+2017-11-23 12:40:46.583 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\solr.xml
+2017-11-23 12:40:59.910 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
+2017-11-23 12:40:59.960 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [wp3]
+2017-11-23 12:40:59.977 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-11-23 12:41:01.674 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrResourceLoader [wp3] Added 53 libs to classloader, from paths: [/C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/clustering/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/extraction/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/langid/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/velocity/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/dist]
+2017-11-23 12:41:03.767 INFO  (main) [   ] o.e.j.s.Server Started @42913ms
+2017-11-23 12:41:12.047 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.1.0
+2017-11-23 12:41:14.814 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.IndexSchema [wp3] Schema name=default-config
+2017-11-23 12:41:22.450 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2017-11-23 12:41:22.548 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.CoreContainer Creating SolrCore 'wp3' using configuration from instancedir C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3, trusted=true
+2017-11-23 12:41:23.347 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-11-23 12:41:23.561 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrCore [[wp3] ] Opening new SolrCore at [C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3], dataDir=[C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3\data\]
+2017-11-23 12:41:24.241 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-11-23 12:41:29.524 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-11-23 12:41:29.524 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-11-23 12:41:30.048 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-11-23 12:41:30.048 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-11-23 12:41:32.001 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.SolrIndexSearcher Opening [Searcher@40bb43da[wp3] main]
+2017-11-23 12:41:32.315 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3\conf
+2017-11-23 12:41:32.578 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-11-23 12:41:32.627 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-11-23 12:41:32.652 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2017-11-23 12:41:34.325 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@40bb43da[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C4)))}
+2017-11-23 12:41:34.326 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-11-23 12:41:34.326 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-11-23 12:41:34.338 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.SolrCore [wp3] Registered new searcher Searcher@40bb43da[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C4)))}
+2017-11-23 12:42:12.903 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32105008254100137095_1511440928472&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511440928473} hits=4 status=0 QTime=550
+2017-11-23 12:42:12.918 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32105008254100137095_1511440928470&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511440928471} hits=4 status=0 QTime=2220
+2017-11-23 12:42:12.998 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32105008254100137095_1511440928474&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511440928475} hits=4 status=0 QTime=631
+2017-11-23 12:42:49.537 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&fq=attr_pdf_docinfo_created:"2013"&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32105008254100137095_1511440928472&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511440928476} hits=3 status=0 QTime=81
+2017-11-23 12:43:03.076 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&fq=attr_pdf_docinfo_created:"2013"&fq=id:"C:\\xampp\\htdocs\\webprosjekt3\\solr-7.1.0\\server\\solr\\wp3\\A+book+about+learning.pdf"&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32105008254100137095_1511440928472&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511440928477} hits=1 status=0 QTime=12
+2017-11-23 12:43:06.531 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&fq=attr_pdf_docinfo_created:"2013"&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32105008254100137095_1511440928472&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511440928478} hits=3 status=0 QTime=34
+2017-11-23 12:43:08.742 INFO  (qtp1911006827-19) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32105008254100137095_1511440928472&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511440928479} hits=4 status=0 QTime=34
+2017-11-23 12:43:10.529 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&fq=id:"C:\\xampp\\htdocs\\webprosjekt3\\solr-7.1.0\\server\\solr\\wp3\\A+book+about+learning.pdf"&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32105008254100137095_1511440928472&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511440928480} hits=1 status=0 QTime=14
+2017-11-23 12:43:12.147 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32105008254100137095_1511440928472&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511440928481} hits=4 status=0 QTime=33
+2017-11-23 12:49:30.937 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&facet.limit=50&json.wrf=jQuery321038192456589818025_1511441370525&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511441370526} hits=0 status=0 QTime=3
+2017-11-23 12:49:55.040 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321038192456589818025_1511441370525&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511441370527} hits=4 status=0 QTime=95
+2017-11-23 12:49:55.046 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321038192456589818025_1511441370528&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511441370529} hits=4 status=0 QTime=88
+2017-11-23 12:49:55.075 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321038192456589818025_1511441370530&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511441370531} hits=4 status=0 QTime=104
+2017-11-23 12:49:55.077 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321038192456589818025_1511441370532&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511441370533} hits=4 status=0 QTime=99
+2017-11-23 12:51:02.547 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_pdf_docinfo_created&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103595332868607741_1511441462374&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511441462375} hits=4 status=0 QTime=35
+2017-11-23 12:51:11.310 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=58940486
+2017-11-23 12:51:11.310 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2017-11-23 12:51:11.310 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2017-11-23 12:51:11.311 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2017-11-23 12:51:11.314 INFO  (coreCloseExecutor-13-thread-1) [   x:wp3] o.a.s.c.SolrCore [wp3]  CLOSING SolrCore org.apache.solr.core.SolrCore@2ec5b36e
+2017-11-23 12:51:11.314 INFO  (coreCloseExecutor-13-thread-1) [   x:wp3] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wp3, tag=784708462

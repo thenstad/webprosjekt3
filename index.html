@@ -35,7 +35,7 @@
 				<!-- INPUT GROUP -->
 					<form class="navbar-search">
 					  <div id="search-div">
-							<input type="text" class="search-query span8" placeholder="Search for.." onfocus="this.value = this.value;" id="solrstrap-searchbox" name="q">
+							<input type="text" class="search-query span8" placeholder="Search for.." onfocus="this.value = this.value;" id="solrstrap-searchbox" name="q" value="attr_filecontent:">
 						</div>
 					</form>
 				</div>
@@ -46,8 +46,7 @@
 	<div class="main_content">
 		<div class="col-lg-12 row" style="margin: 0 auto; float: none;">
 
-<!-- EEEEEEEEEEEEEEEEEEEEEEEEEEND -->
-			<!--actual visible HTML-->
+
 
 			<div class="container">
 			  <div class="row">
@@ -89,11 +88,10 @@
 			<a class="close" href="#">&times;</a>
 			<a href='#' class="selectedNav"
 				data-filter="{{name}}:{{value}}"
-				title="{{facet_displayname name}}:{{value}}">{{facet_displayname name}}:{{value}}</a><br>
+				title="{{facet_displayname name}}:{{value}}">{{facet_displayname name}}:{{value}}</a>
 			{{/each}}
 			</div>
 			</script>
-<!-- EEEEEEEEEEEEEEEEEEEEEEEEEEND -->
 		  </div>
 	  </div>
 
@@ -132,11 +130,8 @@
 	<!-- Scripts -->
 	<!--load scripts at the bottom-->
 
-<!-- EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEND -->
-
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ba-bbq/1.2.1/jquery.ba-bbq.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-	<script type='text/javascript' src="site/js/solrstrap.js"></script>
-<!-- EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEND -->
+	<script type='text/javascript' src="site/js/solr.js"></script>
 </body>
 </html>

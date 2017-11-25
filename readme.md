@@ -14,3 +14,9 @@
 * You have to start your SolR server locally:
 * Go to solr/bin in your cmd, then write a prompt stating "solr start"
 * Then go to index.html in your browser.
+
+#PW
+
+thenstad@solr-1-vm:~$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/thenstad/.ssh/id_rsa): ssh-key

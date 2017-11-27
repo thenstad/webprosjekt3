@@ -1,6 +1,6 @@
-2017-11-26 19:53:16.156 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2017-11-26 19:53:18.511 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
-2017-11-26 19:53:18.511 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-11-26 19:53:18.512 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0, Default config dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
-2017-11-26 19:53:18.975 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-26T19:53:18.513Z
-2017-11-26 19:53:18.976 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-11-27 19:39:13.087 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2017-11-27 19:39:14.487 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
+2017-11-27 19:39:14.487 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-11-27 19:39:14.488 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0, Default config dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
+2017-11-27 19:39:14.550 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-27T19:39:14.489Z
+2017-11-27 19:39:14.551 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE

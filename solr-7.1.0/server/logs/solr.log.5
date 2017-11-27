@@ -1,462 +1,137 @@
-2017-11-23 15:19:08.480 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2017-11-23 15:19:10.196 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
-2017-11-23 15:19:10.197 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-11-23 15:19:10.197 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0, Default config dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
-2017-11-23 15:19:10.226 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-23T15:19:10.199Z
-2017-11-23 15:19:10.228 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-11-23 15:19:10.260 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
-2017-11-23 15:19:10.275 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\solr.xml
-2017-11-23 15:19:11.503 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
-2017-11-23 15:19:11.506 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [wp3]
-2017-11-23 15:19:11.515 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2017-11-23 15:19:11.625 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrResourceLoader [wp3] Added 53 libs to classloader, from paths: [/C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/clustering/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/extraction/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/langid/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/velocity/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/dist]
-2017-11-23 15:19:12.166 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.1.0
-2017-11-23 15:19:12.460 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.IndexSchema [wp3] Schema name=default-config
-2017-11-23 15:19:13.198 INFO  (main) [   ] o.e.j.s.Server Started @6559ms
-2017-11-23 15:19:13.473 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2017-11-23 15:19:13.576 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.CoreContainer Creating SolrCore 'wp3' using configuration from instancedir C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3, trusted=true
-2017-11-23 15:19:13.641 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-11-23 15:19:13.649 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrCore [[wp3] ] Opening new SolrCore at [C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3], dataDir=[C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3\data\]
-2017-11-23 15:19:13.722 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-11-23 15:19:14.383 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-11-23 15:19:14.383 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-11-23 15:19:14.416 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-11-23 15:19:14.416 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-11-23 15:19:14.631 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.SolrIndexSearcher Opening [Searcher@7f510d27[wp3] main]
-2017-11-23 15:19:14.653 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3\conf
-2017-11-23 15:19:14.682 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-11-23 15:19:14.694 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-11-23 15:19:14.715 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2017-11-23 15:19:14.828 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7f510d27[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C4)))}
-2017-11-23 15:19:14.828 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-23 15:19:14.828 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-11-23 15:19:14.836 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.SolrCore [wp3] Registered new searcher Searcher@7f510d27[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C4)))}
-2017-11-23 15:19:16.112 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=59
-2017-11-23 15:30:44.867 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q="safety"&facet.limit=50&json.wrf=jQuery32107090426397735108_1511451044604&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511451044605} hits=0 status=0 QTime=125
-2017-11-23 15:30:48.513 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=Æ&facet.limit=50&json.wrf=jQuery32107090426397735108_1511451044604&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511451044606} hits=0 status=0 QTime=5
-2017-11-23 15:30:48.516 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=Æ&facet.limit=50&json.wrf=jQuery32107090426397735108_1511451044607&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511451044608} hits=0 status=0 QTime=2
-2017-11-23 15:30:48.522 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=Æ&facet.limit=50&json.wrf=jQuery32107090426397735108_1511451044611&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511451044612} hits=0 status=0 QTime=1
-2017-11-23 15:30:48.527 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=Æ&facet.limit=50&json.wrf=jQuery32107090426397735108_1511451044609&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511451044610} hits=0 status=0 QTime=2
-2017-11-23 15:30:52.410 INFO  (qtp1911006827-19) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32107090426397735108_1511451044611&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511451044614} hits=4 status=0 QTime=371
-2017-11-23 15:30:52.419 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32107090426397735108_1511451044604&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511451044616} hits=4 status=0 QTime=375
-2017-11-23 15:30:52.435 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32107090426397735108_1511451044607&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511451044615} hits=4 status=0 QTime=378
-2017-11-23 15:30:52.456 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32107090426397735108_1511451044609&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511451044613} hits=4 status=0 QTime=388
-2017-11-23 15:30:56.556 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery3210030177738958957256_1511451056411&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511451056412} hits=4 status=0 QTime=39
-2017-11-23 15:31:59.622 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511451119404} status=0 QTime=3
-2017-11-23 15:31:59.696 INFO  (qtp1911006827-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451119404} status=0 QTime=74
-2017-11-23 15:31:59.828 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451119404} status=0 QTime=53
-2017-11-23 15:32:03.310 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511451119404} status=0 QTime=0
-2017-11-23 15:32:03.336 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1511451123288} status=0 QTime=17
-2017-11-23 15:32:03.336 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/replication params={wt=json&command=details&_=1511451123289} status=0 QTime=11
-2017-11-23 15:32:03.344 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1511451119404&ts=1511451119404} status=503 QTime=11
-2017-11-23 15:32:03.487 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/system params={wt=json&_=1511451123288} status=0 QTime=147
-2017-11-23 15:32:03.490 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451119404} status=0 QTime=179
-2017-11-23 15:32:05.663 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511451119404} status=0 QTime=0
-2017-11-23 15:32:05.729 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451119404} status=0 QTime=58
-2017-11-23 15:32:07.680 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511451119404} status=0 QTime=0
-2017-11-23 15:32:07.704 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/replication params={wt=json&command=details&_=1511451123289} status=0 QTime=10
-2017-11-23 15:32:07.754 INFO  (qtp1911006827-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451119404} status=0 QTime=72
-2017-11-23 15:32:08.615 INFO  (qtp1911006827-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511451119404} status=0 QTime=0
-2017-11-23 15:32:08.625 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511451123288} status=0 QTime=8
-2017-11-23 15:32:08.633 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/config params={wt=json&_=1511451128553} status=0 QTime=8
-2017-11-23 15:32:08.733 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451119404} status=0 QTime=118
-2017-11-23 15:32:09.129 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511451123288} status=0 QTime=263
-2017-11-23 15:32:35.907 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511451119404} status=0 QTime=0
-2017-11-23 15:32:35.925 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511451123288} status=0 QTime=3
-2017-11-23 15:32:35.932 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/config params={wt=json&_=1511451128553} status=0 QTime=3
-2017-11-23 15:32:35.968 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451119404} status=0 QTime=58
-2017-11-23 15:32:36.318 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511451123288} status=0 QTime=297
-2017-11-23 15:32:44.507 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511451119404} status=0 QTime=0
-2017-11-23 15:32:44.520 INFO  (qtp1911006827-19) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511451123288} status=0 QTime=9
-2017-11-23 15:32:44.521 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
-2017-11-23 15:32:44.667 ERROR (qtp1911006827-15) [   x:wp3] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: One of analysis.fieldvalue, q, or analysis.query parameters must be specified
-	at org.apache.solr.handler.FieldAnalysisRequestHandler.resolveAnalysisRequest(FieldAnalysisRequestHandler.java:144)
-	at org.apache.solr.handler.FieldAnalysisRequestHandler.doAnalysis(FieldAnalysisRequestHandler.java:99)
-	at org.apache.solr.handler.AnalysisRequestHandlerBase.handleRequestBody(AnalysisRequestHandlerBase.java:73)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-11-23 15:32:44.667 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/analysis/field params={analysis.fieldname=attr_filecontent&analysis.showmatch=true&wt=json&_=1511451164493} status=400 QTime=147
-2017-11-23 15:32:44.672 INFO  (qtp1911006827-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451119404} status=0 QTime=163
-2017-11-23 15:32:49.489 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511451119404} status=0 QTime=0
-2017-11-23 15:32:49.501 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511451123288} status=0 QTime=4
-2017-11-23 15:32:49.525 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/config params={wt=json&_=1511451128553} status=0 QTime=1
-2017-11-23 15:32:49.552 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451119404} status=0 QTime=63
-2017-11-23 15:32:49.848 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511451123288} status=0 QTime=245
-2017-11-23 15:32:54.688 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={fl=attr_filecontent&wt=json&_=1511451123288} status=0 QTime=33
-2017-11-23 15:33:03.479 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={fl=attr_filecontent&numTerms=10&wt=json&_=1511451123288} status=0 QTime=22
-2017-11-23 15:36:51.558 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/schema params={wt=json&_=1511451128553} status=0 QTime=26
-2017-11-23 15:37:05.669 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3\conf\managed-schema
-2017-11-23 15:37:05.717 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/schema params={wt=json&_=1511451128553} status=0 QTime=222
-2017-11-23 15:37:07.239 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511451123288} status=0 QTime=4
-2017-11-23 15:37:07.240 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/config params={wt=json&_=1511451128553} status=0 QTime=1
-2017-11-23 15:37:07.561 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511451123288} status=0 QTime=278
-2017-11-23 15:37:25.934 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511451119404} status=0 QTime=0
-2017-11-23 15:37:25.949 INFO  (qtp1911006827-19) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/replication params={wt=json&command=details&_=1511451123289} status=0 QTime=6
-2017-11-23 15:37:26.012 INFO  (qtp1911006827-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451119404} status=0 QTime=74
-2017-11-23 15:37:26.772 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511451119404} status=0 QTime=0
-2017-11-23 15:37:26.840 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451119404} status=0 QTime=68
-2017-11-23 15:37:28.266 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*&_=1511451125562} hits=4 status=0 QTime=1
-2017-11-23 15:37:31.317 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*&_=1511451125562} hits=4 status=0 QTime=0
-2017-11-23 15:38:37.074 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*&hl=on&hl.fl=attr_filecontent&_=1511451125562} hits=4 status=0 QTime=67
-2017-11-23 15:39:40.573 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=continental&hl=on&hl.fl=attr_filecontent&_=1511451125562} hits=0 status=0 QTime=2
-2017-11-23 15:39:48.961 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=continental&hl=on&hl.fl=attr_filecontent&_=1511451125562} hits=0 status=0 QTime=1
-2017-11-23 15:41:25.315 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511451684973} status=0 QTime=0
-2017-11-23 15:41:25.384 INFO  (qtp1911006827-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511451684977} status=0 QTime=68
-2017-11-23 15:41:27.502 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*&_=1511451685205} hits=4 status=0 QTime=1
-2017-11-23 15:48:41.260 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*} hits=4 status=0 QTime=1
-2017-11-23 15:48:49.052 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=hello&debug=query} hits=0 status=0 QTime=3
-2017-11-23 15:49:54.761 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=safety&debug=query} hits=0 status=0 QTime=2
-2017-11-23 15:53:10.409 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511452390022} status=0 QTime=1
-2017-11-23 15:53:10.538 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511452390026} status=0 QTime=125
-2017-11-23 15:53:14.331 INFO  (qtp1911006827-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511452394084} status=0 QTime=0
-2017-11-23 15:53:14.395 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511452394085} status=0 QTime=64
-2017-11-23 15:53:17.071 INFO  (qtp1911006827-19) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*&_=1511452394233} hits=4 status=0 QTime=1
-2017-11-23 15:53:45.727 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*&_=1511452394233} hits=4 status=0 QTime=3
-2017-11-23 15:53:57.526 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*&fl=attr_filecontent&_=1511452394233} hits=4 status=0 QTime=5
-2017-11-23 15:54:00.328 INFO  (qtp1911006827-19) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*&fl=attr_filecontent&_=1511452394233} hits=4 status=0 QTime=0
-2017-11-23 15:54:00.341 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*&fl=attr_filecontent&_=1511452394233} hits=4 status=0 QTime=1
-2017-11-23 15:54:15.332 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=summary&fl=attr_filecontent&_=1511452394233} hits=0 status=0 QTime=1
-2017-11-23 15:54:40.961 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=summary&_=1511452394233} hits=0 status=0 QTime=1
-2017-11-23 15:55:46.218 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321024909753458792672_1511452546084&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452546085} hits=4 status=0 QTime=55
-2017-11-23 15:55:47.950 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321024909753458792672_1511452546087&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452546088} hits=4 status=0 QTime=63
-2017-11-23 15:55:47.953 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321024909753458792672_1511452546084&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452546086} hits=4 status=0 QTime=71
-2017-11-23 15:56:00.384 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&fq=id:"C:\\xampp\\htdocs\\webprosjekt3\\solr-7.1.0\\server\\solr\\wp3\\A+book+about+learning.pdf"&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321024909753458792672_1511452546087&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452546089} hits=1 status=0 QTime=30
-2017-11-23 15:56:09.259 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321024909753458792672_1511452546087&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452546090} hits=4 status=0 QTime=45
-2017-11-23 15:57:36.206 ERROR (qtp1911006827-22) [   x:wp3] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "date"
-	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1219)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:442)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:409)
-	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:816)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:755)
-	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:831)
-	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:329)
-	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:273)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:295)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-11-23 15:57:36.209 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=date&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery3210568449504407684_1511452656035&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452656036} hits=4 status=400 QTime=7
-2017-11-23 15:57:36.226 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.s.HttpSolrCall Unable to write response, client closed connection or we are shutting down
-org.eclipse.jetty.io.EofException: Closed
-	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:620)
-	at org.apache.commons.io.output.ProxyOutputStream.write(ProxyOutputStream.java:55)
-	at org.apache.solr.response.QueryResponseWriterUtil$1.write(QueryResponseWriterUtil.java:54)
-	at java.io.OutputStream.write(Unknown Source)
-	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
-	at sun.nio.cs.StreamEncoder.implWrite(Unknown Source)
-	at sun.nio.cs.StreamEncoder.write(Unknown Source)
-	at java.io.OutputStreamWriter.write(Unknown Source)
-	at org.apache.solr.util.FastWriter.flush(FastWriter.java:140)
-	at org.apache.solr.util.FastWriter.flushBuffer(FastWriter.java:154)
-	at org.apache.solr.response.TextResponseWriter.close(TextResponseWriter.java:96)
-	at org.apache.solr.response.JSONResponseWriter.write(JSONResponseWriter.java:73)
-	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
-	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:806)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:535)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-2017-11-23 15:57:41.649 ERROR (qtp1911006827-19) [   x:wp3] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "date"
-	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1219)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:442)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:409)
-	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:816)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:755)
-	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:831)
-	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:329)
-	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:273)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:295)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-11-23 15:57:41.649 INFO  (qtp1911006827-19) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=date&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery3210568449504407684_1511452656035&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452656037} hits=4 status=400 QTime=3
-2017-11-23 15:57:41.662 ERROR (qtp1911006827-14) [   x:wp3] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "date"
-	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1219)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:442)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:409)
-	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:816)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:755)
-	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:831)
-	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:329)
-	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:273)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:295)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2484)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:720)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-11-23 15:57:41.663 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=date&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery3210568449504407684_1511452656038&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452656039} hits=4 status=400 QTime=10
-2017-11-23 15:57:41.705 INFO  (qtp1911006827-19) [   x:wp3] o.a.s.s.HttpSolrCall Unable to write response, client closed connection or we are shutting down
-org.eclipse.jetty.io.EofException: Closed
-	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:620)
-	at org.apache.commons.io.output.ProxyOutputStream.write(ProxyOutputStream.java:55)
-	at org.apache.solr.response.QueryResponseWriterUtil$1.write(QueryResponseWriterUtil.java:54)
-	at java.io.OutputStream.write(Unknown Source)
-	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
-	at sun.nio.cs.StreamEncoder.implWrite(Unknown Source)
-	at sun.nio.cs.StreamEncoder.write(Unknown Source)
-	at java.io.OutputStreamWriter.write(Unknown Source)
-	at org.apache.solr.util.FastWriter.flush(FastWriter.java:140)
-	at org.apache.solr.util.FastWriter.flushBuffer(FastWriter.java:154)
-	at org.apache.solr.response.TextResponseWriter.close(TextResponseWriter.java:96)
-	at org.apache.solr.response.JSONResponseWriter.write(JSONResponseWriter.java:73)
-	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
-	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:806)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:535)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-2017-11-23 15:57:41.710 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.s.HttpSolrCall Unable to write response, client closed connection or we are shutting down
-org.eclipse.jetty.io.EofException: Closed
-	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:620)
-	at org.apache.commons.io.output.ProxyOutputStream.write(ProxyOutputStream.java:55)
-	at org.apache.solr.response.QueryResponseWriterUtil$1.write(QueryResponseWriterUtil.java:54)
-	at java.io.OutputStream.write(Unknown Source)
-	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
-	at sun.nio.cs.StreamEncoder.implWrite(Unknown Source)
-	at sun.nio.cs.StreamEncoder.write(Unknown Source)
-	at java.io.OutputStreamWriter.write(Unknown Source)
-	at org.apache.solr.util.FastWriter.flush(FastWriter.java:140)
-	at org.apache.solr.util.FastWriter.flushBuffer(FastWriter.java:154)
-	at org.apache.solr.response.TextResponseWriter.close(TextResponseWriter.java:96)
-	at org.apache.solr.response.JSONResponseWriter.write(JSONResponseWriter.java:73)
-	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
-	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:806)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:535)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-2017-11-23 15:59:53.636 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793414&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793415} hits=4 status=0 QTime=69
-2017-11-23 15:59:56.335 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793414&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793416} hits=4 status=0 QTime=47
-2017-11-23 15:59:56.335 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793417&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793418} hits=4 status=0 QTime=45
-2017-11-23 16:00:04.057 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hell&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793414&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793419} hits=0 status=0 QTime=1
-2017-11-23 16:00:04.245 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793414&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793420} hits=0 status=0 QTime=1
-2017-11-23 16:00:04.361 INFO  (qtp1911006827-19) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793414&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793421} hits=0 status=0 QTime=1
-2017-11-23 16:00:04.369 INFO  (qtp1911006827-19) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793417&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793422} hits=0 status=0 QTime=1
-2017-11-23 16:00:04.372 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793423&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793424} hits=0 status=0 QTime=1
-2017-11-23 16:00:04.378 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793425&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793426} hits=0 status=0 QTime=1
-2017-11-23 16:00:06.043 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello4&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793425&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793427} hits=0 status=0 QTime=1
-2017-11-23 16:00:06.107 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello45&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793425&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793428} hits=0 status=0 QTime=1
-2017-11-23 16:00:12.594 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello45&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793425&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793429} hits=0 status=0 QTime=1
-2017-11-23 16:00:12.604 INFO  (qtp1911006827-19) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello45&facet.limit=50&json.wrf=jQuery321095852045549383_1511452793423&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452793430} hits=0 status=0 QTime=1
-2017-11-23 16:00:22.071 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello45&facet.limit=50&json.wrf=jQuery3210007655262836013588_1511452821893&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452821894} hits=0 status=0 QTime=2
-2017-11-23 16:00:26.832 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery3210007655262836013588_1511452821893&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452821895} hits=4 status=0 QTime=49
-2017-11-23 16:00:26.852 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery3210007655262836013588_1511452821898&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452821899} hits=4 status=0 QTime=46
-2017-11-23 16:00:26.862 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery3210007655262836013588_1511452821896&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452821897} hits=4 status=0 QTime=66
-2017-11-23 16:00:26.907 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery3210007655262836013588_1511452821900&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452821901} hits=4 status=0 QTime=91
-2017-11-23 16:06:24.397 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hell&facet.limit=50&json.wrf=jQuery3210007655262836013588_1511452821900&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452821902} hits=0 status=0 QTime=2
-2017-11-23 16:06:24.582 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery3210007655262836013588_1511452821900&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452821903} hits=0 status=0 QTime=1
-2017-11-23 16:06:24.864 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery3210007655262836013588_1511452821900&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452821904} hits=0 status=0 QTime=1
-2017-11-23 16:06:24.868 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery3210007655262836013588_1511452821893&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452821905} hits=0 status=0 QTime=1
-2017-11-23 16:06:24.873 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery3210007655262836013588_1511452821896&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452821906} hits=0 status=0 QTime=1
-2017-11-23 16:06:24.879 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery3210007655262836013588_1511452821898&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511452821907} hits=0 status=0 QTime=1
-2017-11-23 16:44:23.209 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=58940486
-2017-11-23 16:44:23.209 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2017-11-23 16:44:23.209 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2017-11-23 16:44:23.209 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2017-11-23 16:44:23.209 INFO  (coreCloseExecutor-13-thread-1) [   x:wp3] o.a.s.c.SolrCore [wp3]  CLOSING SolrCore org.apache.solr.core.SolrCore@a92c1c8
-2017-11-23 16:44:23.209 INFO  (coreCloseExecutor-13-thread-1) [   x:wp3] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wp3, tag=177390024
+2017-11-24 12:01:56.124 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2017-11-24 12:01:59.065 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.1.0
+2017-11-24 12:01:59.077 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-11-24 12:01:59.077 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0, Default config dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\configsets\_default\conf
+2017-11-24 12:01:59.151 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-24T12:01:59.079Z
+2017-11-24 12:01:59.151 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-11-24 12:01:59.386 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
+2017-11-24 12:01:59.431 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\solr.xml
+2017-11-24 12:02:02.281 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr
+2017-11-24 12:02:02.298 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [wp3]
+2017-11-24 12:02:02.341 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-11-24 12:02:02.884 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrResourceLoader [wp3] Added 53 libs to classloader, from paths: [/C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/clustering/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/extraction/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/langid/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/contrib/velocity/lib, /C:/xampp/htdocs/webprosjekt3/solr-7.1.0/dist]
+2017-11-24 12:02:07.378 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.1.0
+2017-11-24 12:02:07.903 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.IndexSchema [wp3] Schema name=default-config
+2017-11-24 12:02:09.748 INFO  (main) [   ] o.e.j.s.Server Started @18507ms
+2017-11-24 12:02:11.085 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2017-11-24 12:02:11.219 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.CoreContainer Creating SolrCore 'wp3' using configuration from instancedir C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3, trusted=true
+2017-11-24 12:02:11.357 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-11-24 12:02:11.382 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.c.SolrCore [[wp3] ] Opening new SolrCore at [C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3], dataDir=[C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3\data\]
+2017-11-24 12:02:11.520 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-11-24 12:02:12.468 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-11-24 12:02:12.468 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-11-24 12:02:12.586 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-11-24 12:02:12.586 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-11-24 12:02:13.192 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.SolrIndexSearcher Opening [Searcher@3e8b505a[wp3] main]
+2017-11-24 12:02:13.252 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\webprosjekt3\solr-7.1.0\server\solr\wp3\conf
+2017-11-24 12:02:13.320 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-11-24 12:02:13.339 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-11-24 12:02:13.359 INFO  (coreLoadExecutor-6-thread-1) [   x:wp3] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2017-11-24 12:02:13.590 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3e8b505a[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C4)))}
+2017-11-24 12:02:13.590 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-11-24 12:02:13.590 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-11-24 12:02:13.590 INFO  (searcherExecutor-7-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.SolrCore [wp3] Registered new searcher Searcher@3e8b505a[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.1.0):C4)))}
+2017-11-24 12:02:14.135 INFO  (qtp1911006827-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=47
+2017-11-24 12:02:14.235 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930719&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930720} hits=4 status=0 QTime=2657
+2017-11-24 12:02:14.260 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930716&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930718} hits=4 status=0 QTime=2682
+2017-11-24 12:08:57.961 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hell&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930719&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930721} hits=0 status=0 QTime=148
+2017-11-24 12:08:57.968 INFO  (qtp1911006827-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930716&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930722} hits=0 status=0 QTime=2
+2017-11-24 12:08:58.081 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930716&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930723} hits=0 status=0 QTime=1
+2017-11-24 12:08:58.082 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930719&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930724} hits=0 status=0 QTime=1
+2017-11-24 12:08:58.090 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930725&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930726} hits=0 status=0 QTime=1
+2017-11-24 12:08:58.090 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930727&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930728} hits=0 status=0 QTime=1
+2017-11-24 12:09:01.787 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hell&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930727&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930729} hits=0 status=0 QTime=1
+2017-11-24 12:09:04.970 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930725&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930731} hits=4 status=0 QTime=108
+2017-11-24 12:09:05.178 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930727&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930730} hits=4 status=0 QTime=324
+2017-11-24 12:09:05.192 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930719&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930732} hits=4 status=0 QTime=287
+2017-11-24 12:09:05.238 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321005432541591896589_1511524930716&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511524930733} hits=4 status=0 QTime=292
+2017-11-24 12:14:23.402 INFO  (qtp1911006827-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511525662945} status=0 QTime=2
+2017-11-24 12:14:23.506 INFO  (qtp1911006827-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511525662950} status=0 QTime=106
+2017-11-24 12:14:23.572 INFO  (qtp1911006827-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511525662950} status=0 QTime=59
+2017-11-24 12:14:25.790 INFO  (qtp1911006827-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511525662945} status=0 QTime=0
+2017-11-24 12:14:25.799 INFO  (qtp1911006827-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1511525665774} status=0 QTime=4
+2017-11-24 12:14:25.807 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1511525662950&ts=1511525662950} status=503 QTime=4
+2017-11-24 12:14:25.818 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/replication params={wt=json&command=details&_=1511525665775} status=0 QTime=22
+2017-11-24 12:14:25.940 INFO  (qtp1911006827-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/system params={wt=json&_=1511525665774} status=0 QTime=136
+2017-11-24 12:14:25.940 INFO  (qtp1911006827-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511525662950} status=0 QTime=148
+2017-11-24 12:14:27.883 INFO  (qtp1911006827-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511525662945} status=0 QTime=0
+2017-11-24 12:14:27.940 INFO  (qtp1911006827-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511525662950} status=0 QTime=55
+2017-11-24 12:14:29.995 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*&_=1511525667777} hits=4 status=0 QTime=0
+2017-11-24 12:15:03.297 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=id&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321022986118098103425_1511525703129&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511525703130} hits=4 status=0 QTime=42
+2017-11-24 12:15:48.841 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32109621177161934977_1511525748498&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511525748499} hits=4 status=0 QTime=139
+2017-11-24 12:36:44.057 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32107800078692978254_1511527003806&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527003807} hits=4 status=0 QTime=69
+2017-11-24 12:39:58.484 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321028632323533152104_1511527198297&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527198298} hits=4 status=0 QTime=75
+2017-11-24 12:39:59.664 INFO  (qtp1911006827-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery3210032957303609153055_1511527199527&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527199528} hits=4 status=0 QTime=84
+2017-11-24 12:40:00.904 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32109619141900349626_1511527200776&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527200777} hits=4 status=0 QTime=75
+2017-11-24 12:40:02.983 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&fq=attr_date:"10"&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32109619141900349626_1511527200776&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527200778} hits=1 status=0 QTime=150
+2017-11-24 12:40:04.938 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32109619141900349626_1511527200776&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527200779} hits=4 status=0 QTime=140
+2017-11-24 12:40:05.775 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32100035070452208849634_1511527205686&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527205687} hits=4 status=0 QTime=38
+2017-11-24 12:40:06.749 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321019707177647867047_1511527206647&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527206648} hits=4 status=0 QTime=37
+2017-11-24 12:40:08.351 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321008572617919205183_1511527208250&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527208251} hits=4 status=0 QTime=33
+2017-11-24 12:40:13.228 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32105837357763676831_1511527213139&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527213140} hits=4 status=0 QTime=40
+2017-11-24 12:40:13.776 INFO  (qtp1911006827-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32104859647775585365_1511527213650&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527213651} hits=4 status=0 QTime=32
+2017-11-24 12:40:14.045 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32104140571489074958_1511527213934&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527213935} hits=4 status=0 QTime=36
+2017-11-24 12:40:15.580 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32105403362159333351_1511527215460&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527215461} hits=4 status=0 QTime=32
+2017-11-24 12:40:16.672 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321044282913202004504_1511527216539&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527216540} hits=4 status=0 QTime=50
+2017-11-24 12:41:41.666 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321040032958518667505_1511527301497&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527301498} hits=4 status=0 QTime=32
+2017-11-24 12:41:43.985 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321040032958518667505_1511527301497&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527301499} hits=4 status=0 QTime=33
+2017-11-24 12:41:43.988 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321040032958518667505_1511527301500&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527301501} hits=4 status=0 QTime=33
+2017-11-24 12:41:44.682 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32109955705180575614_1511527304575&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527304576} hits=4 status=0 QTime=42
+2017-11-24 12:41:45.391 INFO  (qtp1911006827-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32107006632198939557_1511527305300&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527305301} hits=4 status=0 QTime=33
+2017-11-24 12:41:47.992 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321003623918980789309_1511527307893&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527307894} hits=4 status=0 QTime=41
+2017-11-24 12:48:02.022 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32109586636236142387_1511527681865&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527681866} hits=4 status=0 QTime=33
+2017-11-24 13:07:01.597 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&fq=attr_date:"2013"&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32109586636236142387_1511527681865&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527681867} hits=2 status=0 QTime=22
+2017-11-24 13:07:08.639 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32109586636236142387_1511527681865&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511527681868} hits=4 status=0 QTime=56
+2017-11-24 13:27:37.859 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery321008055269611472493_1511530057650&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530057651} hits=4 status=0 QTime=76
+2017-11-24 13:30:20.567 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220346&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220347} hits=4 status=0 QTime=83
+2017-11-24 13:30:35.414 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220346&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220348} hits=4 status=0 QTime=86
+2017-11-24 13:30:35.414 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220349&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220350} hits=4 status=0 QTime=82
+2017-11-24 13:31:41.578 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220349&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220351} hits=4 status=0 QTime=91
+2017-11-24 13:31:41.589 INFO  (qtp1911006827-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220355&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220356} hits=4 status=0 QTime=80
+2017-11-24 13:31:41.607 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220353&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220354} hits=4 status=0 QTime=106
+2017-11-24 13:31:41.634 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220346&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220352} hits=4 status=0 QTime=145
+2017-11-24 13:41:43.533 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220349&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220357} hits=4 status=0 QTime=43
+2017-11-24 13:41:43.565 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220353&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220358} hits=4 status=0 QTime=76
+2017-11-24 13:42:04.978 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hell&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220353&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220359} hits=0 status=0 QTime=2
+2017-11-24 13:42:05.147 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220353&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220360} hits=0 status=0 QTime=1
+2017-11-24 13:42:05.571 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220353&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220361} hits=0 status=0 QTime=1
+2017-11-24 13:42:05.574 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220349&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220362} hits=0 status=0 QTime=1
+2017-11-24 13:42:05.580 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220346&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220363} hits=0 status=0 QTime=1
+2017-11-24 13:42:05.581 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220355&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220364} hits=0 status=0 QTime=1
+2017-11-24 13:42:13.261 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220355&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220365} hits=4 status=0 QTime=34
+2017-11-24 13:42:13.261 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220346&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220366} hits=4 status=0 QTime=34
+2017-11-24 13:42:13.277 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220349&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220367} hits=4 status=0 QTime=35
+2017-11-24 13:42:13.308 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220353&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220368} hits=4 status=0 QTime=53
+2017-11-24 13:42:29.018 INFO  (qtp1911006827-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hell&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220353&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220369} hits=0 status=0 QTime=2
+2017-11-24 13:42:29.186 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220353&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220370} hits=0 status=0 QTime=1
+2017-11-24 13:42:29.578 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220353&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220371} hits=0 status=0 QTime=1
+2017-11-24 13:42:29.583 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220349&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220372} hits=0 status=0 QTime=1
+2017-11-24 13:42:29.584 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220355&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220373} hits=0 status=0 QTime=1
+2017-11-24 13:42:29.590 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220346&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220374} hits=0 status=0 QTime=1
+2017-11-24 13:42:56.181 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220346&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220375} hits=0 status=0 QTime=1
+2017-11-24 13:42:56.185 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32103518349574994679_1511530220355&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511530220376} hits=0 status=0 QTime=1
+2017-11-24 13:43:34.527 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=hello&_=1511525667777} hits=0 status=0 QTime=0
+2017-11-24 13:43:34.962 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=hello&_=1511525667777} hits=0 status=0 QTime=0
+2017-11-24 13:44:00.781 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*&_=1511525667777} hits=4 status=0 QTime=1
+2017-11-24 13:44:02.885 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*&_=1511525667777} hits=4 status=0 QTime=0
+2017-11-24 13:44:02.892 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*&_=1511525667777} hits=4 status=0 QTime=0
+2017-11-24 13:44:04.388 INFO  (qtp1911006827-22) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*&_=1511525667777} hits=4 status=0 QTime=0
+2017-11-24 13:44:46.186 INFO  (qtp1911006827-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=attr_filecontent:interest&_=1511525667777} hits=3 status=0 QTime=146
+2017-11-24 13:45:02.711 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=*:*&_=1511525667777} hits=4 status=0 QTime=0
+2017-11-24 13:45:09.665 INFO  (qtp1911006827-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=attr_filecontent:interest&_=1511525667777} hits=3 status=0 QTime=0
+2017-11-24 13:45:27.754 INFO  (qtp1911006827-15) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=attr_filecontent:hello&_=1511525667777} hits=0 status=0 QTime=1
+2017-11-24 13:45:37.181 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=attr_filecontent:*&_=1511525667777} hits=4 status=0 QTime=195
+2017-11-24 13:46:02.751 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=attr_filecontent:contain&_=1511525667777} hits=2 status=0 QTime=1
+2017-11-24 13:48:32.655 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=attr_filecontent:contain&facet.field=attr_producer&facet=on&_=1511525667777} hits=2 status=0 QTime=3
+2017-11-24 13:50:30.376 INFO  (qtp1911006827-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={q=attr_filecontent:contain&facet.field=attr_producer&hl=on&hl.fl=attr_filecontent&facet=on&_=1511525667777} hits=2 status=0 QTime=281
+2017-11-24 13:53:07.071 INFO  (qtp1911006827-17) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=hello&facet.limit=50&json.wrf=jQuery32107554710696446181_1511531584047&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511531584048} hits=0 status=0 QTime=2
+2017-11-24 13:53:09.449 INFO  (qtp1911006827-20) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32107554710696446181_1511531584047&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511531584049} hits=4 status=0 QTime=90
+2017-11-24 13:53:09.459 INFO  (qtp1911006827-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32107554710696446181_1511531584052&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511531584053} hits=4 status=0 QTime=79
+2017-11-24 13:53:09.498 INFO  (qtp1911006827-13) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32107554710696446181_1511531584050&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511531584051} hits=4 status=0 QTime=130
+2017-11-24 13:53:09.537 INFO  (qtp1911006827-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/select params={facet.field=id&facet.field=attr_date&hl=true&start=0&rows=10&hl.simple.pre=<em>&hl.snippets=10&q=*&facet.limit=50&json.wrf=jQuery32107554710696446181_1511531584054&hl.simple.post=</em>&facet.mincount=1&hl.fl=attr_filecontent&wt=json&facet=true&_=1511531584055} hits=4 status=0 QTime=103
+2017-11-24 13:55:20.706 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=58940486
+2017-11-24 13:55:20.707 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2017-11-24 13:55:20.707 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2017-11-24 13:55:20.708 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2017-11-24 13:55:20.719 INFO  (coreCloseExecutor-13-thread-1) [   x:wp3] o.a.s.c.SolrCore [wp3]  CLOSING SolrCore org.apache.solr.core.SolrCore@ca21181
+2017-11-24 13:55:20.719 INFO  (coreCloseExecutor-13-thread-1) [   x:wp3] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.wp3, tag=211947905

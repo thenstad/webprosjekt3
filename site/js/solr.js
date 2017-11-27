@@ -6,9 +6,9 @@ var SERVERROOT = 'http://localhost:8983/solr/wp3core/select?'; //SELECT endpoint
 var HITTITLE = 'attr_title';                                        //Name of the title field- the heading of each hit
 var HITBODY = 'attr_filecontent';                                          //Name of the body field- the teaser text of each hit
 var HITSPERPAGE = 10;                                          //page size- hits per page
-var FACETS = ['attr_meta_keyword','attr_pdf_docinfo_creator'];                       //facet categories
+var FACETS = ['attr_meta_keyword','attr_pdf_docinfo_creator', 'attr_date'];                       //facet categories
 
-var FACETS_TITLES = {'TITLE': 'DATE'};  // selective rename facet names for display
+var FACETS_TITLES = {'attr_meta_keyword': 'KEYWORDS', 'attr_pdf_docinfo_creator': 'AUTHOR', 'attr_date': 'DATE'};  // selective rename facet names for display
 
 var HITID = 'id'		// Name of the id field
 var HITTEASER = 'id';	// Name of field to use for teaser
@@ -25,7 +25,7 @@ var AUTOSEARCH_DELAY = 0;
 //when the page is loaded- do this
   $(document).ready(function() {
 	 $('#solrstrap-hits').append('<div offset="0"></div>');
-	 $('#solrstrap-searchbox').attr('value', getURLParam('q'));
+	 $('#solrstrap-searchbox').attr('values', getURLParam('q'));
 	 $('#solrstrap-searchbox').focus();
 	 //when the searchbox is typed- do this
 	 $('#solrstrap-searchbox').keyup(keyuphandler);

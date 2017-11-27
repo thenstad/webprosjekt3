@@ -1,3 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+
+
+.jumbotron {
+	padding-top: 100px;
+	height: 400px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+
+
+
+
+
+
+
 #search-form {
 	margin:0px;
 }
@@ -10,8 +38,11 @@ html{
 	overflow-y: scroll;
 } /*force scrollbar*/
 
-.facet, .chosen-facet{
-	 margin-bottom:20px; overflow: hidden; white-space: nowrap;
+
+.facet {
+	 margin-left: 0px;
+	width: 60vw;
+	margin-bottom:20px; overflow: hidden;
 }
 
 .nav-title{
@@ -31,17 +62,9 @@ nav {
 }
 
 nav a {
-		color: white;
+		color: #fdf7ef;
 }
 
-.facet {
-	 float: left;
-	 margin-left: 5vw;
-}
-
-.facet a {
-	 float: left;
-}
 
 .footer {
 	 margin: 5px;
@@ -58,54 +81,83 @@ body {
 }
 
 a {
-	color: #3FD2EA;
+	color: #fdf7ef;
 	font-size: 15px;
+	font-weight: bold;
+	margin-right: 5px;
 }
 
 em {
-	color: #00879E;
-	font-weight: bolder;
+	color: #fdf7ef;
+	font-weight: bold;
+	opacity: 0.5;
 }
 
 
 #solrstrap-searchbox {
 	min-width: 320px;
 	max-width: 400px;
-	height: 40px;
+	height: 50px;
 	margin: 0px auto;
+	margin-top: 40px;
 	padding-right: 0;
 	border-radius: .25rem;
+	border: 2px #005B6B solid;
+}
+
+#result-summary {
+	 color: #005B6B;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+input[type="text"], textarea {
+
+  background-color : #fdf7ef;
+	color: #005B6B;
+	font-size: 24px;
+
 }
 
 
-
-
 #solrstrap-facets {
-	background-color: #00879E;
-	width: 90vw;
+	background-color: #349CAE;
+	width: 80vw;
 	min-height: 100px;
 	margin: 5px;
 	float: left;
-	padding: 5px;
+	padding: 2vw;
 	border-radius: .25rem;
-	color: white;
+	color: #005B6B;
+	border: 2px #005B6B solid;
+}
+
+#solrstrap-facets a {
+	color: #fdf7ef;
 }
 
 #solrstrap-hits {
 	margin: 5px;
 	margin-bottom: 50px;
-	padding: 5px;
-	width: 90vw;
+	padding: 2vw;
+	width: 80vw;
 	min-height: 500px;
-	background-color: white;
+	background-color: #349CAE;
 	float: left;
 	border-radius: .25rem;
+	border: 2px #005B6B solid;
+}
+
+#solrstrap-hits a {
+	font-size: 20px;
+	color: #fdf7ef;
+	font-weight: bold;
 }
 
 .card-body {
 	min-width: 320px;
 	max-width: 400px;
-	background-color: white;
+	background-color: #349CAE;
 }
 
 .footer {
@@ -115,4 +167,16 @@ em {
 
 .card {
 	margin: 0px 0px 5px 0px;
+	border: 2px #005B6B solid;
+	background-color: #349CAE;
+}
+
+.close {
+	 float: left;
+	 font-size: 1.4rem;
+	 font-weight: 900;
+	 line-height: 1;
+	 color: red;
+	text-shadow: none;
+	opacity: 1;
 }

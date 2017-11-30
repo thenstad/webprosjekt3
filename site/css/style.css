@@ -14,6 +14,7 @@
 	padding-top: 100px;
 	height: 400px;
 	background-color: #FF7960;
+	border-radius: 0.0rem;
 }
 
 
@@ -123,15 +124,13 @@ input[type="text"], textarea {
 	background-color: lightgray;
 	width: 80vw;
 	min-height: 100px;
-	margin: 5px;
 	float: left;
-	padding: 2vw;
-	border-radius: .25rem;
-	color: white;
+	margin-left: 2vw;
+	color: tomato;
 }
 
 #solrstrap-facets a {
-	color: tomato;
+	color: #3A62B2;
 }
 
 #solrstrap-hits {
@@ -149,7 +148,7 @@ input[type="text"], textarea {
 
 #solrstrap-hits a {
 	font-size: 20px;
-	color: #fdf7ef;
+	color: #3A62B2;
 	font-weight: bold;
 }
 
@@ -177,7 +176,7 @@ input[type="text"], textarea {
 	 line-height: 1;
 	 color: red;
 	text-shadow: none;
-	opacity: 1;
+	opacity: 0.5;
 }
 
 .card-text {

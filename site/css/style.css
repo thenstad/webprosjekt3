@@ -19,7 +19,7 @@
 
 
 h1, h2, h3, h4, h5, h6 {
-	color: #fdf7ef;
+	color: white;
 }
 
 
@@ -64,13 +64,12 @@ nav {
 }
 
 nav a {
-		color: #fdf7ef;
+		color: white;
 }
 
 
 .footer {
 	 margin: 5px;
-	 background-color: lightgray;
 	 padding-top: 5px;
 }
 
@@ -79,19 +78,18 @@ nav a {
 }
 
 body {
-	background-color: lightgray;
+	background-color: #FF7960;
 }
 
 a {
-	color: #fdf7ef;
+	color: white;
 	font-size: 15px;
 	font-weight: bold;
 	margin-right: 5px;
 }
 
 em {
-	color: #fdf7ef;
-	font-weight: bold;
+	color: tomato;
 }
 
 
@@ -106,31 +104,33 @@ em {
 }
 
 #result-summary {
-	 color: lightgrey;
-	font-weight: bold;
+	 color: tomato;
 	font-size: 20px;
 }
 
 input[type="text"], textarea {
 
-  background-color : #fdf7ef;
-	color: tomato;
+  background-color : white;
+	color: black;
 	font-size: 24px;
 
 }
 
 
 #solrstrap-facets {
-	background-color: lightgray;
 	width: 80vw;
 	min-height: 100px;
 	float: left;
-	margin-left: 2vw;
-	color: tomato;
+	margin-left: 1vw;
+	color: #3A62B2;
 }
 
 #solrstrap-facets a {
-	color: #3A62B2;
+	color: white;
+	background-color: #3A62B2;
+	border: 1px solid white;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 
 #solrstrap-hits {
@@ -139,11 +139,11 @@ input[type="text"], textarea {
 	padding: 2vw;
 	width: 80vw;
 	min-height: 500px;
-	background-color: #FF7960;
+	background-color: white;
 	float: left;
 	border-radius: .25rem;
 	border: 2px tomato solid;
-	color: lightgray;
+	color: black;
 }
 
 #solrstrap-hits a {
@@ -165,7 +165,7 @@ input[type="text"], textarea {
 
 .card {
 	margin: 0px 0px 5px 0px;
-	border: 2px tomato solid;
+	border: 2px white solid;
 	background-color: #FF7960;
 }
 
@@ -174,11 +174,11 @@ input[type="text"], textarea {
 	 font-size: 1.4rem;
 	 font-weight: 900;
 	 line-height: 1;
-	 color: red;
+	 color: #FF7960;
 	text-shadow: none;
 	opacity: 0.5;
 }
 
 .card-text {
-	color: lightgray;
+	color: white;
 }
